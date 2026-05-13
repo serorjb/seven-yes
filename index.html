@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven-YES – Votre IA privée, souveraine, sur mesure</title>
+    <style>
+        :root {
+            --bg: #0b0f19;
+            --surface: #131a2b;
+            --primary: #3b82f6;
+            --primary-glow: rgba(59,130,246,0.3);
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border: #1e293b;
+            --radius: 12px;
+            --max-width: 1100px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(8px);
+            background: rgba(19,26,43,0.8);
+        }
+        nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: white; }
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+        }
+        .btn-outline:hover { background: rgba(59,130,246,0.1); }
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+        .section {
+            padding: 80px 0;
+            border-top: 1px solid var(--border);
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px 24px;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+        }
+        .card h3 { margin-bottom: 12px; font-size: 1.3rem; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+        .about-content, .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        footer {
+            padding: 40px 0;
+            background: var(--surface);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+        }
+        .ai-badge {
+            display: inline-block;
+            background: rgba(59,130,246,0.15);
+            color: #60a5fa;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 12px;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Seven-YES</div>
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#about">À propos</a>
+                    <a href="#contact">Contact</a>
+                    <a href="mailto:jonathan-cg-investments@proton.me" class="btn btn-primary">Audit gratuit</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Votre IA privée, souveraine,<br>qui connaît votre entreprise par cœur</h1>
+        <p>
+            Nous déployons des agents IA sur-mesure dans votre infrastructure. 
+            Vos données ne sortent jamais de vos murs. 
+            Plus de productivité, moins d'erreurs, aucune fuite.
+        </p>
+        <a href="#contact" class="btn btn-primary">Parlez-nous de votre projet</a>
+    </section>
+
+    <section class="section container" id="services">
+        <h2>Nos services</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>🧠 IA Interne Privée</h3>
+                <p>Un LLM open source hébergé sur vos serveurs ou cloud français, entraîné sur votre documentation, vos procédures, vos contrats. Zéro donnée vers l'extérieur.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 Chatbots Métier</h3>
+                <p>Un agent qui répond instantanément aux questions de vos équipes techniques, support ou commerciales en s'appuyant sur votre base de connaissance.</p>
+            </div>
+            <div class="card">
+                <h3>⚖️ IA Documentaire Juridique</h3>
+                <p>Analysez vos contrats, recherchez la jurisprudence applicable dans Légifrance et les bases publiques. Un assistant juridique augmenté, accessible aux petits cabinets.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Automatisation & CRM</h3>
+                <p>Intégration d'agents Salesforce Agentforce, gestion intelligente des tickets clients, mise à jour automatique des pipelines. Nous gérons votre contrat Salesforce pour vous.</p>
+            </div>
+            <div class="card">
+                <h3>🔐 Souveraineté & Conformité</h3>
+                <p>Formation, déploiement et maintenance de modèles d'IA conformes RGPD, sans aucune dépendance à des API tierces. Vous restez maître de vos données.</p>
+            </div>
+            <div class="card">
+                <h3>🚀 Accompagnement Stratégique</h3>
+                <p>Audit de vos processus, identification des gains de productivité, feuille de route IA sur 12 mois. On vous aide à devenir une entreprise augmentée.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container" id="about">
+        <div class="about-content">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                <strong>Seven-YES</strong> est née de la conviction que l'IA ne doit pas être une boîte noire qui aspire vos secrets industriels.
+                Nous sommes une équipe d'ingénieurs et de business developers passionnés par l'IA éthique et souveraine.
+            </p>
+            <p style="margin-top: 16px;">
+                <strong>Jonathan</strong> – Business Developer AI<br>
+                <span style="color: var(--text-muted);">Passerelle entre vos besoins métier et les solutions techniques les plus avancées.</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="section container" id="contact">
+        <div class="contact-content">
+            <h2>Discutons</h2>
+            <p style="margin-bottom: 24px;">
+                Vous voulez explorer ce que l'IA privée peut faire pour vous ?<br>
+                Écrivez-nous pour un premier échange gratuit de 30 minutes.
+            </p>
+            <a href="mailto:jonathan-cg-investments@proton.me" class="btn btn-primary" style="font-size: 1.1rem; padding: 14px 32px;">📩 jonathan-cg-investments@proton.me</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Seven-YES – Tous droits réservés</p>
+            <div class="ai-badge">✨ Ce site a été généré par notre IA</div>
+        </div>
+    </footer>
+</body>
+</html>
