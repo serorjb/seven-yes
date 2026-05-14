@@ -3,420 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seven-YES – IA privée, souveraine & Agentforce pour PME</title>
-    <style>
-        :root {
-            --bg: #0b0f19;
-            --surface: #131a2b;
-            --primary: #3b82f6;
-            --accent: #a78bfa;
-            --primary-glow: rgba(59,130,246,0.25);
-            --text: #e2e8f0;
-            --text-muted: #94a3b8;
-            --border: #1e293b;
-            --radius: 14px;
-            --max-width: 1140px;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-        }
-        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
-
-        /* Header */
-        header {
-            padding: 24px 0;
-            border-bottom: 1px solid var(--border);
-            background: rgba(19,26,43,0.85);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #60a5fa, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .nav-links { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
-        .nav-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover { color: white; }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 10px 24px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: 0.2s;
-            cursor: pointer;
-            border: none;
-        }
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-            box-shadow: 0 0 18px var(--primary-glow);
-        }
-        .btn-primary:hover { background: #2563eb; }
-        .btn-outline {
-            border: 1px solid var(--primary);
-            color: var(--primary);
-            background: transparent;
-        }
-        .btn-outline:hover { background: rgba(59,130,246,0.08); }
-
-        /* Hero */
-        .hero {
-            padding: 90px 0 70px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-        .hero .highlight { 
-            background: linear-gradient(135deg, #60a5fa, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            max-width: 700px;
-            margin: 0 auto 36px;
-        }
-
-        /* Sections */
-        .section { padding: 80px 0; border-top: 1px solid var(--border); }
-        .section h2 {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            text-align: center;
-        }
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 48px;
-            font-size: 1.05rem;
-        }
-
-        /* Services grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-        }
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 32px 24px;
-            transition: border-color 0.3s, transform 0.2s;
-        }
-        .card:hover {
-            border-color: var(--primary);
-            transform: translateY(-4px);
-        }
-        .card h3 { margin-bottom: 12px; font-size: 1.25rem; }
-        .card p { color: var(--text-muted); font-size: 0.95rem; }
-
-        /* Logo strips */
-        .logo-strip {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 36px;
-            margin: 32px 0 24px;
-        }
-        .logo-strip img {
-            height: 38px;
-            opacity: 0.75;
-            transition: opacity 0.3s;
-            filter: grayscale(30%);
-        }
-        .logo-strip img:hover { opacity: 1; filter: grayscale(0%); }
-        .logo-strip .logo-text {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--text-muted);
-            opacity: 0.7;
-            transition: opacity 0.3s;
-        }
-        .logo-strip .logo-text:hover { opacity: 1; }
-
-        /* Two-column feature */
-        .feature-split {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: center;
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            .feature-split { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2rem; }
-        }
-        .feature-split h3 {
-            font-size: 1.4rem;
-            margin-bottom: 12px;
-        }
-        .feature-split ul {
-            list-style: none;
-            color: var(--text-muted);
-        }
-        .feature-split ul li {
-            padding: 6px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-        .feature-split ul li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-        }
-
-        /* Employés IA table */
-        .employee-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
-        }
-        .employee-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 28px 20px;
-            text-align: center;
-            transition: border-color 0.3s;
-        }
-        .employee-card:hover { border-color: var(--accent); }
-        .employee-card .emoji { font-size: 2.5rem; margin-bottom: 12px; }
-        .employee-card h4 { margin-bottom: 6px; }
-        .employee-card p { color: var(--text-muted); font-size: 0.88rem; }
-
-        /* Footer */
-        footer {
-            padding: 40px 0;
-            background: var(--surface);
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border);
-        }
-        .ai-badge {
-            display: inline-block;
-            background: rgba(139,92,246,0.12);
-            color: #a78bfa;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-top: 12px;
-        }
-    </style>
+    <title>Seven-YES — Agence IA pour PME | IA Souveraine, Agentforce, Employés IA</title>
+    <meta name="description" content="Agence IA experte pour PME françaises. Nous déployons votre IA privée et souveraine, intégrons Agentforce, et créons vos employés IA sur mesure. Audit gratuit.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Seven<span>-YES</span></div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="ia-souveraine.html">IA Souveraine</a>
+                    <a href="agentforce.html">Agentforce</a>
+                    <a href="employes-ia.html">Employés IA</a>
+                    <a href="contact.html" class="btn btn-primary">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<!-- ============ HEADER ============ -->
-<header>
-    <div class="container">
-        <nav>
-            <div class="logo">Seven-YES</div>
-            <div class="nav-links">
-                <a href="#agentforce">Agentforce</a>
-                <a href="#sovereign">IA Souveraine</a>
-                <a href="#employees">Employés IA</a>
-                <a href="#contact">Contact</a>
-                <a href="mailto:jonathan-cg-investments@proton.me" class="btn btn-primary">Audit gratuit</a>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Votre <strong>agence IA</strong> pour PME.<br> Privée. <strong>Souveraine</strong>. Sans fuite de données.</h1>
+            <p>Nous déployons des <strong>agents IA</strong> dans votre infrastructure ou dans notre <strong>cloud français</strong>. Agentforce, Mistral, Cohere, Llama — nous choisissons la <strong>meilleure brique</strong> pour votre métier.</p>
+            <div class="btn-group">
+                <a href="contact.html" class="btn btn-accent">Audit IA gratuit — 30 minutes</a>
+                <a href="ia-souveraine.html" class="btn btn-outline">Découvrir l'IA souveraine</a>
             </div>
-        </nav>
-    </div>
-</header>
-
-<!-- ============ HERO ============ -->
-<section class="hero container">
-    <h1>
-        L'IA sur mesure pour les PME.<br>
-        <span class="highlight">Privée. Souveraine. Sans fuite de données.</span>
-    </h1>
-    <p>
-        Nous déployons des agents IA dans votre infrastructure ou dans notre cloud français.
-        Agentforce, Mistral, Cohere, Llama — nous choisissons la meilleure brique pour votre métier.
-    </p>
-    <a href="#contact" class="btn btn-primary" style="font-size:1.1rem; padding:14px 32px;">Parlez-nous de votre projet</a>
-</section>
-
-<!-- ============ AGENTFORCE ============ -->
-<section class="section container" id="agentforce">
-    <h2>Salesforce Agentforce</h2>
-    <p class="section-subtitle">Votre agent IA conversationnel, directement dans votre CRM Salesforce.<br>Nous gérons l'implémentation, la personnalisation et la maintenance pour vous.</p>
-
-    <!-- Logo Salesforce -->
-    <div class="logo-strip">
-        <img src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg" alt="Salesforce" style="height:34px;">
-        <span style="color:var(--text-muted); font-size:1.1rem;">+</span>
-        <span style="font-size:1.3rem; font-weight:700; color:#a78bfa;">Agentforce</span>
-    </div>
-
-    <div class="feature-split">
-        <div>
-            <h3>Ce que nous faisons</h3>
-            <ul>
-                <li>Configuration d'Agentforce dans votre org Salesforce</li>
-                <li>Connexion à votre base de connaissance et vos process métier</li>
-                <li>Formation de vos équipes à l'agent IA</li>
-                <li>Maintenance et amélioration continue</li>
-                <li>Gestion de vos licences Salesforce (commission incluse)</li>
-            </ul>
         </div>
-        <div>
-            <h3>Ce que vous gagnez</h3>
-            <ul>
-                <li>Service client niveau 1 automatisé à 80 %</li>
-                <li>Mise à jour automatique des pipelines CRM</li>
-                <li>Réponse instantanée 24/7 à vos clients</li>
-                <li>Un interlocuteur unique pour Salesforce + IA</li>
-                <li>Aucune embauche d'expert Salesforce en interne</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- ============ IA SOUVERAINE ============ -->
-<section class="section container" id="sovereign">
-    <h2>IA Souveraine & Privée</h2>
-    <p class="section-subtitle">Vos données ne quittent jamais vos murs. Nous déployons un LLM open source ou privé<br>sur vos serveurs ou dans un cloud français (Scaleway, Outscale).</p>
-
-    <!-- Logo strip -->
-    <div class="logo-strip">
-        <span class="logo-text">Cohere</span>
-        <span style="color:var(--border);">|</span>
-        <span class="logo-text" style="font-family: monospace;">Mistral AI</span>
-        <span style="color:var(--border);">|</span>
-        <span class="logo-text" style="font-family: monospace;">Llama 4</span>
-        <span style="color:var(--border);">|</span>
-        <span class="logo-text" style="font-family: monospace;">Falcon 3</span>
-    </div>
-    <p style="text-align:center; color:var(--text-muted); font-size:0.9rem; margin-bottom:40px;">
-        Nous sélectionnons et déployons le meilleur modèle pour votre cas d'usage.<br>
-        <a href="https://cohere.com" target="_blank" style="color:var(--primary);">Cohere Command R+</a> · 
-        <a href="https://mistral.ai" target="_blank" style="color:var(--primary);">Mistral Small / Large</a> · 
-        <a href="https://llama.meta.com" target="_blank" style="color:var(--primary);">Llama 4 (Meta)</a>
-    </p>
-
-    <div class="feature-split">
-        <div>
-            <h3>Déploiement 100 % privé</h3>
-            <ul>
-                <li>LLM hébergé sur vos serveurs ou cloud français</li>
-                <li>Aucune donnée ne transite par une API tierce</li>
-                <li>Entraîné sur votre documentation interne</li>
-                <li>Conforme RGPD par construction</li>
-                <li>Zéro dépendance à OpenAI ou Google</li>
-            </ul>
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="trust-item">
+            <div class="num">+28,9%</div>
+            <div class="label">Croissance annuelle du marché IA en France</div>
         </div>
-        <div>
-            <h3>Cas d'usage immédiats</h3>
-            <ul>
-                <li>Assistant interne pour vos équipes (RH, technique, commercial)</li>
-                <li>Chatbot qui connaît vos procédures par cœur</li>
-                <li>Analyse de contrats et documents juridiques</li>
-                <li>Recherche sémantique dans vos bases documentaires</li>
-                <li>Génération de comptes-rendus et rapports</li>
-            </ul>
+        <div class="trust-item">
+            <div class="num">159%</div>
+            <div class="label">ROI médian des projets IA en PME</div>
         </div>
-    </div>
-</section>
-
-<!-- ============ EMPLOYÉS IA ============ -->
-<section class="section container" id="employees">
-    <h2>Vos Employés IA, clé en main</h2>
-    <p class="section-subtitle">
-        Des agents IA spécialisés par fonction, déployés en interne (souverain) ou en mode SaaS hébergé par nos soins.<br>
-        Facturation au forfait mensuel ou au volume de tokens consommés — vous choisissez.
-    </p>
-
-    <div class="employee-grid">
-        <div class="employee-card">
-            <div class="emoji">⚖️</div>
-            <h4>Juriste IA</h4>
-            <p>Lit vos contrats, recherche la jurisprudence applicable, alerte sur les clauses à risque. Base Légifrance + vos documents.</p>
+        <div class="trust-item">
+            <div class="num">32%</div>
+            <div class="label">Seulement 1 PME sur 3 utilise l'IA quotidiennement</div>
         </div>
-        <div class="employee-card">
-            <div class="emoji">💬</div>
-            <h4>Service Client IA</h4>
-            <p>Répond au niveau 1 et 2, suit les commandes, escalade les cas complexes. Connecté à votre CRM et votre base de connaissance.</p>
-        </div>
-        <div class="employee-card">
-            <div class="emoji">📧</div>
-            <h4>Prospection Email IA</h4>
-            <p>Rédige et envoie des séquences d'emails personnalisés, qualifie les réponses, met à jour votre pipeline. Sans spam.</p>
-        </div>
-        <div class="employee-card">
-            <div class="emoji">📊</div>
-            <h4>Marketing IA</h4>
-            <p>Génère vos posts réseaux sociaux, vos newsletters, analyse les performances, suggère des améliorations.</p>
-        </div>
-        <div class="employee-card">
-            <div class="emoji">👥</div>
-            <h4>RH & Performance IA</h4>
-            <p>Suivi des KPI d'équipe, alertes de performance, synthèse des entretiens, onboarding automatisé.</p>
-        </div>
-        <div class="employee-card">
-            <div class="emoji">🔍</div>
-            <h4>Votre Métier, Votre Agent</h4>
-            <p>Vous avez un processus spécifique ? Nous entraînons un agent IA sur votre métier. Sur devis.</p>
+        <div class="trust-item">
+            <div class="num">80%</div>
+            <div class="label">Des projets IA sans accompagnement n'aboutissent pas</div>
         </div>
     </div>
 
-    <p style="text-align:center; margin-top:32px; color:var(--text-muted);">
-        <strong>Déploiement souverain</strong> (vos serveurs, cloud français) ou <strong>mode SaaS</strong> (nous hébergeons, vous consommez).<br>
-        Tarification au forfait mensuel ou au token — <a href="#contact" style="color:var(--primary);">contactez-nous pour un devis</a>.
-    </p>
-</section>
+    <!-- SERVICES -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Ce que nous faisons — <strong>clairement</strong>.</h2>
+            <p class="section-subtitle">Trois piliers. Une <strong>expertise</strong>. Des <strong>résultats mesurables</strong>.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="icon">🔒</div>
+                    <h3>IA Souveraine & Privée</h3>
+                    <p>Vos <strong>données ne quittent jamais vos murs</strong>. Nous déployons un LLM open source ou privé sur vos serveurs ou dans un <strong>cloud français</strong> (Scaleway, Outscale). <strong>Zéro dépendance</strong> à OpenAI ou Google.</p>
+                    <a href="ia-souveraine.html" class="btn btn-outline" style="margin-top:12px;">En savoir plus</a>
+                </div>
+                <div class="card">
+                    <div class="icon">⚡</div>
+                    <h3>Salesforce Agentforce</h3>
+                    <p>Votre <strong>agent IA conversationnel</strong> directement dans votre CRM. Nous gérons l'<strong>implémentation</strong>, la <strong>personnalisation</strong> et la <strong>maintenance</strong> — licence Salesforce incluse.</p>
+                    <a href="agentforce.html" class="btn btn-outline" style="margin-top:12px;">En savoir plus</a>
+                </div>
+                <div class="card">
+                    <div class="icon">🤖</div>
+                    <h3>Employés IA clé en main</h3>
+                    <p><strong>Juriste IA</strong>, <strong>Service Client IA</strong>, <strong>Marketing IA</strong>, <strong>Comptable IA</strong> — des agents spécialisés par fonction, déployés en interne ou en mode SaaS. Facturation au <strong>forfait mensuel</strong>.</p>
+                    <a href="employes-ia.html" class="btn btn-outline" style="margin-top:12px;">Voir les agents</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ============ CONTACT ============ -->
-<section class="section container" id="contact">
-    <div style="text-align:center;">
-        <h2>Discutons</h2>
-        <p style="color:var(--text-muted); margin-bottom:24px;">
-            Vous voulez explorer ce que l'IA privée ou Agentforce peut faire pour votre PME ?<br>
-            Écrivez-nous pour un premier échange gratuit de 30 minutes.
-        </p>
-        <a href="mailto:jonathan-cg-investments@proton.me" class="btn btn-primary" style="font-size:1.1rem; padding:14px 32px;">
-            📩 jonathan-cg-investments@proton.me
-        </a>
-        <p style="margin-top:16px; color:var(--text-muted); font-size:0.9rem;">
-            Jonathan — Business Developer AI<br>
-            Seven-YES · Lyon
-        </p>
-    </div>
-</section>
+    <!-- WHY US -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Pourquoi <strong>Seven-YES</strong> ?</h2>
+            <p class="section-subtitle">Parce que <strong>80% des projets IA en entreprise n'aboutissent jamais</strong>. Nous changeons cette statistique.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>📋 Conseil & Stratégie</h3>
+                    <p><strong>Audit IA</strong> de vos processus. Identification des gains rapides. <strong>Feuille de route</strong> sur 6, 12 et 24 mois. Nous parlons <strong>ROI</strong>, pas jargon technique.</p>
+                </div>
+                <div class="card">
+                    <h3>🔧 Service Managé</h3>
+                    <p>Nous déployons, vous utilisez. <strong>Maintenance</strong>, <strong>supervision</strong>, <strong>mise à jour</strong> : nous pilotons vos agents IA pour éviter les <strong>hallucinations</strong> et les dérapages de coûts.</p>
+                </div>
+                <div class="card">
+                    <h3>⚖️ Conformité RGPD & AI Act</h3>
+                    <p>Le 2 août 2026, l'<strong>AI Act</strong> entre en vigueur. Nous garantissons votre <strong>conformité</strong> par construction : <strong>transparence</strong>, <strong>traçabilité</strong>, <strong>sobriété</strong> documentaire.</p>
+                </div>
+                <div class="card">
+                    <h3>🏗️ Logiciel Marque Blanche</h3>
+                    <p>Votre propre <strong>plateforme de pilotage IA</strong>. Supervision de tous vos agents, <strong>tableau de bord</strong> de performance, <strong>journal de conformité</strong> intégré.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ============ FOOTER ============ -->
-<footer>
-    <div class="container">
-        <p>© 2026 Seven-YES – Tous droits réservés</p>
-        <div class="ai-badge">✨ Ce site a été généré par notre IA</div>
-    </div>
-</footer>
+    <!-- TESTIMONIAL -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonial">
+                <p>"Nous avons externalisé notre service client niveau 1 à un agent IA déployé par Seven-YES. En 3 mois, <strong>80% des tickets</strong> sont résolus sans intervention humaine. Nos équipes se concentrent enfin sur les dossiers à <strong>valeur ajoutée</strong>."</p>
+                <div class="author">— Directeur Commercial, PME industrielle lyonnaise</div>
+            </div>
+        </div>
+    </section>
 
+    <!-- FINAL CTA -->
+    <section style="text-align:center;">
+        <div class="container">
+            <h2 class="section-title">Prêt à <strong>automatiser</strong> ce qui vous ralentit ?</h2>
+            <p style="color:var(--text-muted); margin-bottom:24px;">Un premier échange de 30 minutes, <strong>gratuit</strong> et sans engagement. Nous analysons votre besoin et vous proposons une <strong>solution concrète</strong>.</p>
+            <a href="contact.html" class="btn btn-accent" style="font-size:1.1rem; padding:14px 36px;">Contactez-nous →</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <h4>Seven-YES</h4>
+                <p><strong>Agence IA</strong> experte pour PME françaises.<br>Lyon — France.</p>
+            </div>
+            <div>
+                <h4>Pages</h4>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="ia-souveraine.html">IA Souveraine</a></p>
+                <p><a href="agentforce.html">Agentforce</a></p>
+                <p><a href="employes-ia.html">Employés IA</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Jonathan — Business Developer AI</p>
+                <p>contact@seven-yes.fr</p>
+                <p>Lyon, France</p>
+            </div>
+        </div>
+        <div class="container bottom">
+            <p>© 2026 Seven-YES. Tous droits réservés. <strong>Agence IA</strong> — Lyon, Paris, France.</p>
+        </div>
+    </footer>
 </body>
 </html>
