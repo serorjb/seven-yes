@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logiciel IA Marque Blanche | Plateforme de Pilotage IA à Votre Marque | Seven-YES</title>
+    <meta name="description" content="Votre propre plateforme de pilotage IA en marque blanche. Tableau de bord unifié, supervision d'agents, journal de conformité. Commercialisez sous votre marque. Revenu récurrent.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Seven<span>-YES</span></div>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="ia-souveraine.html">IA Souveraine</a>
+                    <a href="agentforce.html">Agentforce</a>
+                    <a href="employes-ia.html">Employés IA</a>
+                    <a href="logiciel-marque-blanche.html" class="active">Marque Blanche</a>
+                    <a href="conseil-strategie.html">Conseil</a>
+                    <a href="conformite.html">Conformité</a>
+                    <a href="a-propos.html">À Propos</a>
+                    <a href="cas-clients.html">Cas Clients</a>
+                    <a href="blog.html">Ressources</a>
+                    <a href="contact.html" class="btn btn-primary">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1><strong>Logiciel IA en Marque Blanche</strong>. Votre plateforme. Votre marque. Notre technologie.</h1>
+            <p>Nous construisons le <strong>socle technologique</strong> — vous le commercialisez sous <strong>votre nom, vos couleurs, votre domaine</strong>. <strong>Recurring revenue</strong> pour votre cabinet de conseil, votre ESN, ou votre agence.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Le marché de la <strong>marque blanche IA</strong> explose — voici pourquoi.</h2>
+            <div style="max-width:800px; margin:0 auto;">
+                <p>Le marché des solutions IA en marque blanche a <strong>explosé en 2025</strong>. Selon une étude de Vendasta, la marque blanche est devenue <strong>le moyen le plus efficace pour les agences de proposer des solutions d'automatisation de niveau entreprise sans supporter les coûts de développement</strong>. Les plateformes de marque blanche permettent aux agences de <strong>packager leur expertise en services scalables et répétables</strong>, débloquant ainsi du revenu récurrent, une livraison plus rapide et de nouveaux modèles de croissance.</p>
+
+                <p style="margin-top:18px;">En France, des acteurs comme <strong>Oreus (distributeur de LightOn) et Atbridges</strong> ont déjà validé le modèle : une plateforme d'IA souveraine, hébergée en France, commercialisée sous la marque de partenaires. Le marché français de la marque blanche IA est estimé à plusieurs centaines de millions d'euros et croît de <strong>plus de 40% par an</strong>.</p>
+
+                <p style="margin-top:18px;"><strong>Pour qui ?</strong> Cabinets de conseil, ESN (Entreprises de Services Numériques), agences marketing, cabinets d'expertise comptable, éditeurs de logiciels qui veulent ajouter une brique IA à leur offre sans la construire from scratch.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Ce que contient votre <strong>plateforme en marque blanche</strong>.</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Tableau de bord unifié</h3>
+                    <p><strong>Supervision de tous vos agents IA</strong> en un seul écran. Performance, coûts, volumes, incidents. Vos clients voient <strong>leur</strong> tableau de bord, avec <strong>votre</strong> logo. Reporting exportable en PDF.</p>
+                </div>
+                <div class="card">
+                    <h3>Journal de conformité intégré</h3>
+                    <p>Chaque action de chaque agent est <strong>tracée, horodatée, documentée</strong>. Conformité <strong>RGPD et AI Act</strong> par construction. Prêt pour un audit à tout moment. <strong>Amendes évitées : jusqu'à 35M€.</strong></p>
+                </div>
+                <div class="card">
+                    <h3>Marketplace d'agents</h3>
+                    <p>Vos clients peuvent <strong>activer des agents IA</strong> (Service Client, Marketing, Juriste, etc.) en quelques clics depuis votre plateforme. <strong>Facturation à l'usage</strong> — vous fixez vos marges.</p>
+                </div>
+                <div class="card">
+                    <h3>Personnalisation complète</h3>
+                    <p>Logo, couleurs, domaine, emails, templates de rapport — <strong>tout est à votre marque</strong>. Vos clients ne voient jamais Seven-YES. La plateforme est <strong>la vôtre</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title"><strong>Cas d'usage</strong> — qui utilise une plateforme en marque blanche ?</h2>
+            <div style="max-width:800px; margin:0 auto;">
+                <p><strong>Cabinet d'expertise comptable.</strong> Vous proposez à vos clients un <strong>Comptable IA</strong> qui automatise la saisie et le rapprochement bancaire, directement depuis votre portail client. Vous facturez 200€/mois par client pour ce service — <strong>revenu récurrent additionnel</strong> sans travail supplémentaire.</p>
+
+                <p style="margin-top:14px;"><strong>Agence marketing.</strong> Vous offrez un <strong>Marketing IA</strong> qui génère du contenu pour vos clients : posts réseaux sociaux, newsletters, articles de blog. La plateforme est à votre marque, vos clients vous perçoivent comme l'acteur innovant du marché.</p>
+
+                <p style="margin-top:14px;"><strong>ESN.</strong> Vous ajoutez une brique <strong>IA souveraine</strong> à votre offre de services managés. Vos clients PME accèdent à des agents IA sans avoir à recruter ou à se former. Vous gérez tout depuis votre portail en marque blanche.</p>
+
+                <p style="margin-top:14px;"><strong>Cabinet de conseil.</strong> Vous intégrez un <strong>module IA</strong> dans vos missions de transformation. Le tableau de bord permet à vos clients de suivre la performance des déploiements IA en temps réel, avec votre branding.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title"><strong>Modèle économique</strong> — combien ça coûte, combien ça rapporte.</h2>
+            <div style="max-width:800px; margin:0 auto;">
+                <p><strong>Pour vous (le partenaire) :</strong></p>
+                <p>• <strong>Setup initial</strong> : à partir de <strong>15 000€</strong> pour la configuration de la plateforme à votre marque, l'intégration des agents, et la formation de vos équipes.</p>
+                <p>• <strong>Licence mensuelle</strong> : à partir de <strong>2 000€/mois</strong> pour la plateforme, incluant l'hébergement, la maintenance, les mises à jour et le support de niveau 2 (notre équipe supporte votre équipe).</p>
+                <p>• <strong>Marge sur les agents</strong> : vous fixez vos prix de revente. Exemple : un agent Service Client IA vous coûte <strong>300€/mois</strong> (prix partenaire), vous le revendez <strong>500€/mois</strong> à votre client. <strong>Marge brute : 40%.</strong></p>
+
+                <p style="margin-top:18px;"><strong>Pour vos clients (les utilisateurs finaux) :</strong></p>
+                <p>• Pas de setup initial (tout est packagé par vos soins)</p>
+                <p>• Facturation au forfait mensuel, sans engagement longue durée</p>
+                <p>• Accès à des agents IA de niveau entreprise pour un coût de PME</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align:center;">
+        <div class="container">
+            <h2 class="section-title">Prêt à <strong>lancer votre offre IA</strong> sans construire la technologie ?</h2>
+            <a href="contact.html" class="btn btn-accent" style="font-size:1.1rem; padding:14px 36px;">Parlons marque blanche →</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <h4>Seven-YES</h4>
+                <p><strong>Agence IA</strong> experte — <strong>Ingénieurs &amp; Docteurs en sciences</strong>.<br>Lyon — Paris — France.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <p><a href="ia-souveraine.html">IA Souveraine</a></p>
+                <p><a href="agentforce.html">Agentforce</a></p>
+                <p><a href="employes-ia.html">Employés IA</a></p>
+                <p><a href="logiciel-marque-blanche.html">Marque Blanche</a></p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>contact@seven-yes.fr</p>
+                <p>Lyon, France</p>
+            </div>
+        </div>
+        <div class="container bottom">
+            <p>© 2026 Seven-YES. <strong>Agence IA</strong> — Lyon, Paris, France.</p>
+        </div>
+    </footer>
+</body>
+</html>
