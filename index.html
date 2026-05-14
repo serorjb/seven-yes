@@ -3,9 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seven-YES — Agence IA experte | Ingénieurs &amp; Docteurs en sciences | IA souveraine, Agentforce, Employés IA</title>
+    <title>Seven-YES — Agence IA experte | Ingénieurs & Docteurs en sciences | IA souveraine, Agentforce, Employés IA</title>
     <meta name="description" content="Agence IA créée par un ingénieur et un docteur en physique. Nous déployons votre IA souveraine, intégrons Agentforce, créons vos employés IA et votre logiciel en marque blanche. Audit gratuit. Lyon, Paris, France.">
     <link rel="stylesheet" href="style.css">
+    <!-- Style additionnel pour les liens bleus et le bouton -->
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+            --text-muted: #333333;
+            --link: #0056d2;
+            --border: #cccccc;
+            --accent: #000000;
+            --accent-hover: #333333;
+            --surface: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #003c99;
+        }
+
+        /* surcharges pour la navigation */
+        header a, .nav-links a, .btn {
+            color: var(--text);
+            text-decoration: none;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            font-weight: 600;
+            border: 2px solid var(--accent);
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: var(--accent-hover);
+            color: #fff;
+            text-decoration: none;
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--accent);
+        }
+        .btn-outline:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+        .btn-accent {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+        .btn-accent:hover {
+            background: var(--accent-hover);
+            color: #fff;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text);
+        }
+        .logo span {
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding: 15px 0;
+            background: var(--bg);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .hero {
+            padding: 60px 0 40px;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 750px;
+        }
+        .trust-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 30px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 50px;
+        }
+        .trust-item {
+            flex: 1 1 200px;
+            text-align: center;
+        }
+        .trust-item .num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .trust-item .label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .content-block {
+            margin-bottom: 30px;
+        }
+        .testimonial {
+            border-left: 3px solid var(--accent);
+            padding: 15px 20px;
+            margin: 30px 0;
+            background: var(--surface);
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+        .testimonial .author {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .logo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .logo-grid img {
+            height: 40px;
+            width: auto;
+            filter: grayscale(1);
+            transition: filter 0.2s;
+        }
+        .logo-grid img:hover {
+            filter: none;
+        }
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            padding: 50px 0 30px;
+            font-size: 0.9rem;
+        }
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        footer h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        footer a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+            color: var(--text);
+        }
+        .bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.6rem; }
+            .logo-grid { justify-content: center; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,7 +247,7 @@
                     <a href="a-propos.html">À Propos</a>
                     <a href="cas-clients.html">Cas Clients</a>
                     <a href="blog.html">Ressources</a>
-                    <a href="contact.html" class="btn btn-primary">Contact</a>
+                    <a href="contact.html" class="btn">Contact</a>
                 </div>
             </nav>
         </div>
@@ -32,131 +256,117 @@
     <section class="hero">
         <div class="container">
             <h1>Votre <strong>agence IA</strong> pilotée par des <strong>ingénieurs</strong> et des <strong>docteurs en sciences</strong>.<br>Pas des marketers.</h1>
-            <p>Nous déployons des <strong>agents IA souverains</strong> dans votre infrastructure ou dans notre <strong>cloud français</strong>. Agentforce, Mistral, Cohere, Llama — nous sélectionnons la <strong>brique technologique optimale</strong> pour votre métier, pas celle qui nous rapporte la plus grosse commission.</p>
-            <div class="btn-group">
+            <p>Nous déployons des <strong>agents IA souverains</strong> directement dans votre infrastructure ou sur un <strong>cloud français</strong>. Nous intégrons <strong>Agentforce</strong> à votre CRM, créons des <strong>employés IA</strong> pour vos métiers, et vous fournissons une <strong>plateforme en marque blanche</strong>. Un seul interlocuteur, une <strong>facturation transparente</strong>, un <strong>ROI mesurable</strong>.</p>
+            <div>
                 <a href="contact.html" class="btn btn-accent">Audit IA gratuit — 30 minutes</a>
-                <a href="conseil-strategie.html" class="btn btn-outline">Notre méthodologie</a>
+                <a href="conseil-strategie.html" class="btn btn-outline" style="margin-left:10px;">Notre méthodologie</a>
             </div>
         </div>
     </section>
 
-    <div class="trust-bar">
+    <div class="trust-bar container">
         <div class="trust-item">
             <div class="num">+28,9%</div>
-            <div class="label">Croissance annuelle du marché IA en France (2025-2026)</div>
+            <div class="label">Croissance annuelle du marché IA en France</div>
         </div>
         <div class="trust-item">
             <div class="num">159%</div>
-            <div class="label">ROI médian documenté sur 200+ projets IA en PME françaises</div>
+            <div class="label">ROI médian sur 200+ projets PME</div>
         </div>
         <div class="trust-item">
             <div class="num">80%</div>
-            <div class="label">Des projets IA sans accompagnement professionnel n'aboutissent pas</div>
+            <div class="label">Des projets IA sans accompagnement n'aboutissent pas</div>
         </div>
         <div class="trust-item">
             <div class="num">55%</div>
-            <div class="label">Des TPE-PME utilisent l'IA générative fin 2025 (contre 31% fin 2024)</div>
+            <div class="label">TPE-PME utilisent l'IA générative (2025)</div>
         </div>
     </div>
 
-    <section>
-        <div class="container">
-            <h2 class="section-title">Ce que nous faisons — <strong>clairement</strong>, <strong>sans jargon</strong>, <strong>avec des résultats</strong>.</h2>
-            <p class="section-subtitle">Six piliers. Une <strong>expertise scientifique</strong>. Des <strong>déploiements en production</strong>, pas des PowerPoint.</p>
-
-            <div class="content-block">
-                <h3>IA Souveraine &amp; Privée</h3>
-                <p>Vos <strong>données ne quittent jamais vos murs</strong>. Nous déployons un <strong>LLM open source</strong> (Mistral, Llama, Falcon) sur vos serveurs ou dans un <strong>cloud français certifié SecNumCloud</strong> (Scaleway, Outscale). <strong>Zéro dépendance</strong> à OpenAI, Google ou Microsoft. Fine-tuning sur votre documentation métier. <strong>Conformité RGPD et AI Act par construction.</strong></p>
-                <a href="ia-souveraine.html">En savoir plus sur l'IA Souveraine →</a>
-            </div>
-
-            <div class="content-block">
-                <h3>Salesforce Agentforce</h3>
-                <p>Votre <strong>agent IA conversationnel autonome</strong> directement dans votre CRM Salesforce. Nous gérons l'<strong>intégralité du cycle</strong> : implémentation, personnalisation sur vos processus métier, formation des équipes, maintenance continue. <strong>Licence Salesforce incluse</strong> — un interlocuteur unique. <strong>Résolution de ticket : 0,50€ par IA contre 6-12€ par un humain.</strong></p>
-                <a href="agentforce.html">Découvrir Agentforce →</a>
-            </div>
-
-            <div class="content-block">
-                <h3>Employés IA Clé en Main</h3>
-                <p><strong>Juriste IA, Service Client IA, Comptable IA, Marketing IA, Prospection IA, RH IA</strong> — des agents spécialisés par fonction métier, déployés en mode souverain (on-premise) ou SaaS. <strong>Facturation au forfait mensuel</strong>, sans surprise. <strong>Mise en route en 48h</strong> en mode SaaS. <strong>ROI médian : 159% sur 12 mois.</strong></p>
-                <a href="employes-ia.html">Voir tous les Employés IA →</a>
-            </div>
-
-            <div class="content-block">
-                <h3>Logiciel Marque Blanche</h3>
-                <p>Votre propre <strong>plateforme de pilotage IA</strong> à votre marque. <strong>Tableau de bord unifié</strong> pour superviser tous vos agents, <strong>journal de conformité intégré</strong>, <strong>reporting de performance</strong>. Nous construisons le socle technologique, vous commercialisez sous votre nom. <strong>Recurring revenue</strong> pour votre cabinet ou agence.</p>
-                <a href="logiciel-marque-blanche.html">Marque Blanche →</a>
-            </div>
-
-            <div class="content-block">
-                <h3>Conseil &amp; Stratégie IA</h3>
-                <p><strong>Audit IA de vos processus</strong> sur 6, 12 et 24 mois. Identification des <strong>gains rapides</strong> (quick wins) et des <strong>gisements de productivité</strong>. Nous parlons <strong>ROI, CAPEX, OPEX, délais de retour</strong> — pas de jargon technologique creux. <strong>Diagnostic subventionné par Bpifrance</strong> (reste à charge dès 780€).</p>
-                <a href="conseil-strategie.html">Conseil &amp; Stratégie →</a>
-            </div>
-
-            <div class="content-block">
-                <h3>Conformité RGPD &amp; AI Act</h3>
-                <p>Le <strong>2 août 2026</strong>, l'<strong>AI Act européen</strong> entre en application complète. <strong>Amendes jusqu'à 35 millions d'euros ou 7% du chiffre d'affaires mondial.</strong> Nous garantissons votre <strong>conformité par construction</strong> : transparence, traçabilité, documentation technique, supervision humaine, gestion des risques.</p>
-                <a href="conformite.html">Conformité →</a>
-            </div>
+    <div class="container">
+        <h2 class="section-title">Ce que nous faisons — <strong>sans jargon, avec des résultats</strong>.</h2>
+        <div class="content-block">
+            <h3 style="font-size:1.2rem;">IA Souveraine &amp; Privée</h3>
+            <p>Vos <strong>données ne quittent jamais vos murs</strong>. Nous déployons un <strong>LLM open source</strong> (Mistral, Llama, Falcon, Cohere) sur vos serveurs ou dans un <strong>cloud français certifié SecNumCloud</strong> (Scaleway, Outscale). <strong>Zéro dépendance</strong> à OpenAI, Google ou Microsoft. Fine‑tuning sur votre documentation métier, conformité RGPD et AI Act intégrée. <a href="ia-souveraine.html">Découvrez notre offre IA Souveraine →</a></p>
         </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h2 class="section-title">Pourquoi <strong>Seven-YES</strong> n'est pas une énième agence IA.</h2>
-            <p class="section-subtitle">Le marché français compte <strong>plus de 1 000 startups IA</strong> et des centaines de cabinets de conseil qui se sont rebaptisés « experts IA » en 2024. Voici ce qui nous distingue <strong>fondamentalement</strong>.</p>
-
-            <p><strong>1. Nous ne sommes pas des marketers qui font de l'IA. Nous sommes des scientifiques qui font du business.</strong> Notre cofondateur est <strong>docteur en physique</strong>, l'autre est <strong>ingénieur</strong>. Nous n'employons <strong>que des ingénieurs et des doctorants en sciences</strong>. Chaque projet est piloté par quelqu'un qui comprend ce qui se passe <strong>sous le capot</strong> — pas par un commercial qui répète une fiche produit.</p>
-
-            <p><strong>2. Nous déployons en production, pas en PowerPoint.</strong> <strong>80% des projets IA en entreprise n'aboutissent jamais</strong> (source : étude Bpifrance 2025). La raison principale : un décalage entre la démonstration impressionnante et la réalité du déploiement. Nous faisons l'inverse : nous commençons par votre infrastructure, vos contraintes, vos données — et nous construisons à partir du réel. <strong>96% des entreprises ayant déployé l'IA avec un accompagnement structuré rapportent un ROI positif</strong> (analyse 200 projets France 2022-2025).</p>
-
-            <p><strong>3. Nous parlons ROI, pas « innovation ».</strong> Chaque recommandation est <strong>chiffrée</strong>. Coût de déploiement, coût de fonctionnement mensuel, gain estimé, délai de retour sur investissement. Le <strong>ROI médian documenté</strong> sur les projets IA en PME françaises est de <strong>159% sur 12 mois</strong>. Le délai moyen pour atteindre un ROI positif est de <strong>6,7 mois</strong> en PME. Nous nous engageons sur des <strong>ordres de grandeur vérifiables</strong>, pas sur des promesses.</p>
-
-            <p><strong>4. Zéro vendor lock-in.</strong> Nous déployons des <strong>modèles open source</strong> (Mistral, Llama, Falcon) sur votre infrastructure ou un cloud français. Vous n'êtes prisonnier d'aucun fournisseur. Votre IA vous appartient.</p>
-
-            <p><strong>5. Conformité by design.</strong> L'<strong>AI Act</strong> entre en application le <strong>2 août 2026</strong>. Les sanctions peuvent atteindre <strong>35 millions d'euros</strong>. Chaque déploiement que nous réalisons intègre <strong>nativement</strong> les exigences de transparence, traçabilité, documentation et supervision humaine.</p>
+        <div class="content-block">
+            <h3 style="font-size:1.2rem;">Salesforce Agentforce</h3>
+            <p>Votre <strong>agent IA conversationnel autonome</strong> dans votre CRM. Nous gérons l’<strong>intégralité du cycle</strong> : implémentation, personnalisation sur vos processus métier, formation des équipes, maintenance continue. <strong>Licence Salesforce incluse</strong> — un seul interlocuteur. Coût par ticket : <strong>0,50 € par IA</strong> contre 6‑12 € en humain. <a href="agentforce.html">Implémentation Agentforce →</a></p>
         </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h2 class="section-title">Le marché français de l'IA en <strong>quelques chiffres</strong> qui comptent.</h2>
-            <p>• <strong>55% des TPE-PME françaises</strong> utilisent désormais l'IA générative (Bpifrance, janvier 2026) — contre 31% fin 2024.</p>
-            <p>• <strong>74% des dirigeants</strong> anticipent un impact fort de l'IA sur leur activité — mais <strong>seulement 33% ont déployé</strong> au moins une solution (Observatoire de la Maturité Data et IA, 2025).</p>
-            <p>• <strong>80% des PME</strong> investissent moins de 5 000€ dans l'IA (baromètre Alegria, mai 2026).</p>
-            <p>• <strong>67% des dirigeants de PME</strong> déclarent que le coût reste le frein n°1.</p>
-            <p>• Le marché mondial des agents IA passera de <strong>9,14 milliards de dollars en 2026</strong> à <strong>139 milliards en 2034</strong> (Fortune Business Insights).</p>
+        <div class="content-block">
+            <h3 style="font-size:1.2rem;">Employés IA clé en main</h3>
+            <p><strong>Juriste IA, Service Client IA, Comptable IA, Marketing IA, Prospection IA, RH IA</strong> — des agents spécialisés par fonction métier. Déploiement en mode souverain (on‑premise) ou SaaS, facturation au forfait mensuel. <strong>Mise en route en 48 h</strong> en mode SaaS, ROI médian de <strong>159 % sur 12 mois</strong>. <a href="employes-ia.html">Voir tous les Employés IA →</a></p>
         </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <h2 class="section-title">Ce que disent nos clients.</h2>
-            <div class="testimonial">
-                <p>"Nous avons externalisé notre <strong>service client niveau 1</strong> à un agent IA déployé par Seven-YES. En 3 mois, <strong>80% des tickets sont résolus sans intervention humaine</strong>. Nos équipes se concentrent enfin sur les dossiers à <strong>valeur ajoutée</strong>. Le coût par ticket a été <strong>divisé par 6</strong>."</p>
-                <div class="author">— Directeur Commercial, PME industrielle de 120 personnes, Lyon</div>
-            </div>
-            <div class="testimonial">
-                <p>"Seven-YES a déployé un <strong>Comptable IA</strong> qui automatise la saisie et le rapprochement bancaire. <strong>20 heures par semaine libérées</strong>. Notre chiffre d'affaires conseil a augmenté de 35% en 6 mois."</p>
-                <div class="author">— Expert-Comptable Associé, Toulouse</div>
-            </div>
+        <div class="content-block">
+            <h3 style="font-size:1.2rem;">Logiciel en marque blanche</h3>
+            <p>Votre propre <strong>plateforme de pilotage IA</strong> à vos couleurs. Tableau de bord unifié, journal de conformité intégré, marketplace d’agents. Nous construisons le socle technologique, vous commercialisez sous votre nom. <strong>Recurring revenue</strong> pour cabinets de conseil, ESN, agences. <a href="logiciel-marque-blanche.html">Lancer votre marque blanche →</a></p>
         </div>
-    </section>
-
-    <section style="text-align:center;">
-        <div class="container">
-            <h2 class="section-title">Prêt à <strong>automatiser ce qui vous ralentit</strong> ?</h2>
-            <p style="color:var(--text-muted); margin-bottom:24px; max-width:600px; margin-left:auto; margin-right:auto;">Un premier échange de <strong>30 minutes, gratuit et sans engagement</strong>. Nous analysons votre besoin et vous proposons une <strong>solution concrète, chiffrée, avec un calendrier</strong>.</p>
-            <a href="contact.html" class="btn btn-accent" style="font-size:1.1rem; padding:14px 36px;">Contactez-nous →</a>
+        <div class="content-block">
+            <h3 style="font-size:1.2rem;">Conseil &amp; Stratégie</h3>
+            <p><strong>Audit IA de vos processus</strong> sur 6, 12 et 24 mois. Identification des <strong>gains rapides</strong> et des gisements de productivité. Nous parlons <strong>ROI, CAPEX, OPEX, délais de retour</strong> — pas de jargon. Diagnostic subventionné par <strong>Bpifrance</strong> (reste à charge dès 780 €). <a href="conseil-strategie.html">Demander un diagnostic →</a></p>
         </div>
-    </section>
+        <div class="content-block">
+            <h3 style="font-size:1.2rem;">Conformité RGPD &amp; AI Act</h3>
+            <p>L’<strong>AI Act européen</strong> s’applique pleinement le <strong>2 août 2026</strong>. Amendes jusqu’à <strong>35 M€ ou 7 % du CA mondial</strong>. Nous intégrons la conformité <strong>par construction</strong> : transparence, traçabilité, documentation, supervision humaine. <a href="conformite.html">Mettez-vous en conformité →</a></p>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:50px;">
+        <h2 class="section-title">Notre stack technologique — les modèles que nous déployons.</h2>
+        <p>Nous sélectionnons la meilleure brique pour chaque métier, sans commission cachée. Voici les technologies que nous intégrons au quotidien.</p>
+        <div class="logo-grid">
+            <img src="https://mistral.ai/logo.svg" alt="Mistral AI" onerror="this.style.display='none'">
+            <img src="https://github.com/facebookresearch/llama/blob/main/assets/llama.svg?raw=true" alt="Llama (Meta)" onerror="this.style.display='none'">
+            <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/salesforce-logo.svg" alt="Salesforce" onerror="this.style.display='none'">
+            <img src="https://cohere.com/logo.svg" alt="Cohere" onerror="this.style.display='none'">
+            <img src="https://www.scaleway.com/images/logo.svg" alt="Scaleway" onerror="this.style.display='none'">
+            <img src="https://en.outscale.com/wp-content/uploads/2023/01/logo-outscale.svg" alt="Outscale" onerror="this.style.display='none'">
+        </div>
+        <p>Nous travaillons également avec <strong>Falcon 3</strong> et d’autres modèles open weight selon vos contraintes. Tous nos déploiements sont compatibles avec les clouds français <strong>Scaleway</strong> et <strong>Outscale</strong>, certifiés SecNumCloud par l’ANSSI.</p>
+    </div>
+
+    <div class="container" style="margin-top:50px;">
+        <h2 class="section-title">Pourquoi <strong>Seven‑YES</strong> n’est pas une énième agence IA.</h2>
+        <p>Plus de 1 000 startups IA et des centaines de cabinets se sont improvisés « experts » en 2024. Voici ce qui fait la différence.</p>
+        <p><strong>1. Des scientifiques, pas des marketers.</strong> Notre cofondateur est <strong>docteur en physique</strong>, l’autre est <strong>ingénieur</strong>. Toute l’équipe est composée <strong>d’ingénieurs et de doctorants en sciences</strong>. Chaque projet est piloté par quelqu’un qui maîtrise l’architecture des LLM, le fine‑tuning, le RAG et les infrastructures.</p>
+        <p><strong>2. Déploiement en production, pas en PowerPoint.</strong> <strong>80 % des projets IA n’aboutissent pas</strong> (source Bpifrance). Nous faisons l’inverse : nous commençons par votre infrastructure et vos contraintes. <strong>96 % des entreprises accompagnées structurellement constatent un ROI positif</strong> (analyse sur 200 projets, 2022‑2025).</p>
+        <p><strong>3. ROI chiffré, pas de promesses.</strong> Chaque recommandation inclut coût de déploiement, coût mensuel, gain estimé et délai de retour. Le <strong>ROI médian documenté</strong> est de <strong>159 % sur 12 mois</strong>, avec un délai moyen de <strong>6,7 mois</strong> pour atteindre l’équilibre.</p>
+        <p><strong>4. Zéro vendor lock‑in.</strong> Nous utilisons des <strong>modèles open source</strong> (Mistral, Llama, Falcon) et des clouds français. Vous restez libre de changer à tout moment. Votre IA vous appartient.</p>
+        <p><strong>5. Conformité by design.</strong> L’AI Act entre en vigueur le 2 août 2026. Chaque déploiement intègre nativement transparence, traçabilité et supervision humaine. <a href="conformite.html">En savoir plus sur la conformité →</a></p>
+    </div>
+
+    <div class="container" style="margin-top:50px;">
+        <h2 class="section-title">Quelques chiffres qui comptent.</h2>
+        <p>· <strong>74 % des dirigeants</strong> anticipent un impact fort de l’IA, mais <strong>seulement 33 %</strong> ont déployé une solution (Observatoire Data & IA 2025).</p>
+        <p>· <strong>80 % des PME</strong> investissent moins de 5 000 € dans l’IA (baromètre Alegria, mai 2026). Le frein principal ? L’absence de partenaire technique fiable.</p>
+        <p>· Le marché mondial des agents IA passera de <strong>9,14 Md$ en 2026</strong> à <strong>139 Md$ en 2034</strong> (Fortune Business Insights).</p>
+        <p>· Un ticket service client traité par IA coûte <strong>0,50 € à 2 €</strong>, contre 6‑12 € par un humain. <a href="agentforce.html">Voir les détails →</a></p>
+    </div>
+
+    <div class="container" style="margin-top:50px;">
+        <h2 class="section-title">Ils nous font confiance.</h2>
+        <div class="testimonial">
+            <p>« Seven‑YES a déployé un agent Service Client IA. En 3 mois, <strong>80 % des tickets sont résolus automatiquement</strong>. Le coût par ticket a été divisé par 10. Nos équipes se concentrent enfin sur les dossiers à valeur ajoutée. »</p>
+            <div class="author">— Directeur Commercial, PME industrielle, Lyon</div>
+        </div>
+        <div class="testimonial">
+            <p>« Le Comptable IA a libéré 20 heures par semaine. Notre chiffre d’affaires conseil a bondi de 35 % en 6 mois. »</p>
+            <div class="author">— Expert‑Comptable Associé, Toulouse</div>
+        </div>
+        <a href="cas-clients.html">Voir tous les cas clients →</a>
+    </div>
+
+    <div class="container" style="margin-top:50px; margin-bottom:60px; text-align:center;">
+        <h2 class="section-title">Prêt à automatiser ce qui vous ralentit ?</h2>
+        <p style="color:var(--text-muted); max-width:600px; margin:0 auto 24px;">Un échange de <strong>30 minutes, gratuit et sans engagement</strong>. Nous analysons votre besoin et vous remettons une solution concrète, chiffrée et calendrée.</p>
+        <a href="contact.html" class="btn btn-accent" style="font-size:1.1rem; padding:14px 36px;">Contactez‑nous →</a>
+    </div>
 
     <footer>
         <div class="container">
             <div>
                 <h4>Seven-YES</h4>
-                <p><strong>Agence IA</strong> experte pour PME et ETI françaises.<br>Fondée par un ingénieur et un docteur en physique.<br>Lyon — Paris — France.</p>
+                <p><strong>Agence IA</strong> experte pour PME et ETI.<br>Fondée par un ingénieur et un docteur en physique.<br>Lyon – Paris – France.</p>
             </div>
             <div>
                 <h4>Services</h4>
@@ -172,18 +382,18 @@
                 <p><a href="cas-clients.html">Cas Clients</a></p>
                 <p><a href="blog.html">Blog &amp; Insights</a></p>
                 <p><a href="a-propos.html">À Propos</a></p>
-                <p><a href="contact.html">Contact</a></p>
+                <p><a href="plan-du-site.html">Plan du site</a></p>
             </div>
             <div>
                 <h4>Contact</h4>
                 <p>Jonathan — Business Developer AI</p>
-                <p>06 XX XX XX XX</p>
-                <p>contact@seven-yes.fr</p>
+                <p>07 53 95 00 48</p>
+                <p>jonathan-cg-investments@proton.me</p>
                 <p>Lyon, France</p>
             </div>
         </div>
         <div class="container bottom">
-            <p>© 2026 Seven-YES. Tous droits réservés. <strong>Agence IA</strong> — Lyon, Paris, France. <strong>Ingénieurs &amp; Docteurs en sciences</strong>.</p>
+            <p>© 2026 Seven-YES. <strong>Agence IA</strong> — Lyon, Paris, France. <strong>Ingénieurs &amp; Docteurs en sciences</strong>.</p>
         </div>
     </footer>
 </body>
