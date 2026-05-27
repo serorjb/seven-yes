@@ -1,336 +1,231 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IA Souveraine & Privée pour PME | Déploiement LLM France | Seven-YES</title>
-  <meta name="description" content="Déployez votre LLM privé sur vos serveurs ou cloud français SecNumCloud. Mistral, Llama 4, Cohere, Falcon. Zéro fuite de données. Conformité RGPD et AI Act native. Agence IA Lyon Paris.">
-  <meta name="keywords" content="ia souveraine, ia souveraine france, llm privé, déploiement ia on-premise, ia rgpd, agence ia souveraine, mistral ai déploiement, cloud français ia, secnumcloud ia">
-  <link rel="canonical" href="https://www.seven-yes.fr/ia-souveraine">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA Souveraine &amp; Privée pour PME | Déploiement LLM France | Seven‑YES</title>
+<meta name="description" content="Déploiement de Mistral AI, Llama, Cohere sur vos serveurs ou cloud SecNumCloud. Zéro donnée ne quitte votre infrastructure. Conformité RGPD et AI Act.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <nav>
-    <a href="index.html" class="logo">Seven<em>-YES</em></a>
-    <div class="nav-links">
-      <a href="index.html">Accueil</a>
-      <a href="ia-souveraine.html" class="active">IA Souveraine</a>
-      <a href="agentforce.html">Agentforce</a>
-      <a href="employes-ia.html">Employés IA</a>
-      <a href="conseil-ia.html">Conseil & Audit</a>
-      <a href="contact.html" class="nav-cta">Audit gratuit →</a>
-    </div>
-    <a href="contact.html" class="btn btn-red nav-mobile-cta" style="font-size:0.85rem;padding:8px 16px;">Audit gratuit</a>
-  </nav>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Seven<span>-YES</span></a>
+      <button class="menu-toggle" aria-label="Menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;display:none;">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="ia-souveraine.html">IA Souveraine</a></li>
+        <li><a href="agentforce.html">Agentforce</a></li>
+        <li><a href="employes-ia.html">Employés IA</a></li>
+        <li><a href="conformite.html">Conformité</a></li>
+        <li><a href="cas-clients.html">Cas clients</a></li>
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="contact.html" class="btn-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<nav class="breadcrumb">
-  <div class="wrap">
-    <a href="index.html">Accueil</a><span>›</span>
-    <strong>IA Souveraine & Privée</strong>
-  </div>
-</nav>
-
-<section class="hero hero--dark">
-  <div class="wrap">
-    <span class="hero-kicker">IA Souveraine — Cloud français & On-Premise</span>
-    <h1>Vos données. Vos serveurs.<br><em>Votre modèle.</em></h1>
-    <p class="lead">Aucune donnée ne transite par une API tierce. Nous déployons <strong>Mistral AI, Cohere Command R+, Llama 4</strong> ou <strong>Falcon 3</strong> directement dans votre infrastructure ou sur un <strong>cloud français certifié SecNumCloud</strong>. Conformité RGPD et AI Act par construction, sans compromis.</p>
-    <div class="hero-btns">
-      <a href="contact.html" class="btn btn-red">Audit de faisabilité gratuit →</a>
-      <a href="#modeles" class="btn btn-outline-white">Nos modèles</a>
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Accueil</a> › IA Souveraine &amp; Privée</p>
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">IA Souveraine — Cloud français &amp; On-Premise</p>
+      <h1>Vos données. Vos serveurs.<br>Votre modèle.</h1>
+      <p>Aucune donnée ne transite par une API tierce. Nous déployons Mistral AI, Cohere Command R+, Llama 4 ou Falcon 3 directement dans votre infrastructure ou sur un cloud français certifié SecNumCloud. Conformité RGPD et AI Act par construction, sans compromis.</p>
+      <p><a href="contact.html" class="btn">Audit de faisabilité gratuit →</a> &nbsp; <a href="#notre-stack" style="color:var(--text);">Nos modèles ↓</a></p>
     </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="trust-bar">
+    <div class="trust-item"><div class="num">0</div><div class="label">Données envoyées à un serveur non-souverain</div></div>
+    <div class="trust-item"><div class="num">100%</div><div class="label">Hébergement France ou Europe — cloud SecNumCloud ANSSI</div></div>
+    <div class="trust-item"><div class="num">4%</div><div class="label">Du CA mondial : amende max RGPD pour transfert illicite de données</div></div>
+    <div class="trust-item"><div class="num">2 août<br>2026</div><div class="label">Date d'entrée en vigueur de l'AI Act pour les systèmes à risque élevé</div></div>
   </div>
-</section>
 
-<div class="stat-bar">
-  <div style="max-width:var(--max);margin:0 auto;padding:0 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;">
-    <div class="stat-item"><div class="stat-num"><em>0</em></div><div class="stat-label">Données envoyées à un serveur non-souverain</div></div>
-    <div class="stat-item"><div class="stat-num"><em>100%</em></div><div class="stat-label">Hébergement France ou Europe — cloud SecNumCloud ANSSI</div></div>
-    <div class="stat-item"><div class="stat-num"><em>4%</em></div><div class="stat-label">Du CA mondial : amende max RGPD pour transfert illicite de données</div></div>
-    <div class="stat-item"><div class="stat-num"><em>2 août<br style="line-height:0"> 2026</em></div><div class="stat-label">Date d'entrée en vigueur de l'AI Act pour les systèmes à risque élevé</div></div>
-  </div>
-</div>
-
-<!-- POURQUOI SOUVERAIN -->
-<section class="section">
-  <div class="wrap--mid">
-    <span class="section-num">01 — Le contexte</span>
-    <h2 class="section-title">L'IA souveraine n'est plus un luxe.<br><em>C'est une nécessité stratégique.</em></h2>
-
-    <div class="two-col two-col--3-2">
-      <div class="prose">
-        <p>Quand vous envoyez un prompt à ChatGPT, Gemini ou Claude, <strong>vos données transitent par des serveurs américains soumis au Cloud Act</strong>. Cette loi fédérale américaine de 2018 autorise les autorités des États-Unis à accéder aux données stockées par des entreprises américaines — <strong>même si ces données sont physiquement hébergées en Europe</strong>. OpenAI, Google et Microsoft sont des entreprises américaines. Leurs clauses de confidentialité, aussi rassurantes qu'elles puissent paraître, ne les protègent pas de cette obligation légale.</p>
-        <p>Pour un cabinet d'avocats, une direction financière, un département RH, une entreprise industrielle avec du savoir-faire propriétaire, cette situation est <strong>juridiquement intenable</strong>. Vos documents de stratégie, vos données de paie, vos contrats, vos données client — tout cela ne peut pas voyager sur des réseaux dont vous n'êtes pas maître.</p>
-        <p>L'<strong>IA souveraine</strong> résout ce problème à la racine. Le modèle d'intelligence artificielle tourne sur <strong>votre infrastructure</strong>, dans <strong>vos locaux</strong> ou chez un <strong>cloud provider français certifié SecNumCloud par l'ANSSI</strong>. Aucun appel à une API externe. Aucune donnée ne sort de votre périmètre de contrôle. Le modèle ne "connaît" que ce que vous avez choisi de lui montrer.</p>
-        <p>Au-delà de la conformité, l'IA souveraine offre un avantage compétitif durable : un modèle <strong>fine-tuné sur votre documentation interne</strong> devient progressivement un actif stratégique à part entière — une expertise capitalisée, documentée, interrogeable en langage naturel, disponible 24h/24 et sans turn-over.</p>
+  <!-- Contexte -->
+  <section>
+    <div class="container">
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">01 — Le contexte</p>
+      <h2 class="section-title">L'IA souveraine n'est plus un luxe.<br>C'est une nécessité stratégique.</h2>
+      <p>Quand vous envoyez un prompt à ChatGPT, Gemini ou Claude, vos données transitent par des serveurs américains soumis au Cloud Act. Cette loi fédérale américaine de 2018 autorise les autorités des États-Unis à accéder aux données stockées par des entreprises américaines — même si ces données sont physiquement hébergées en Europe. OpenAI, Google et Microsoft sont des entreprises américaines. Leurs clauses de confidentialité, aussi rassurantes qu'elles puissent paraître, ne les protègent pas de cette obligation légale.</p>
+      <p>Pour un cabinet d'avocats, une direction financière, un département RH, une entreprise industrielle avec du savoir-faire propriétaire, cette situation est juridiquement intenable. Vos documents de stratégie, vos données de paie, vos contrats, vos données client — tout cela ne peut pas voyager sur des réseaux dont vous n'êtes pas maître.</p>
+      <p>L'IA souveraine résout ce problème à la racine. Le modèle d'intelligence artificielle tourne sur votre infrastructure, dans vos locaux ou chez un cloud provider français certifié SecNumCloud par l'ANSSI. Aucun appel à une API externe. Aucune donnée ne sort de votre périmètre de contrôle. Le modèle ne "connaît" que ce que vous avez choisi de lui montrer.</p>
+      <p>Au-delà de la conformité, l'IA souveraine offre un avantage compétitif durable : un modèle fine-tuné sur votre documentation interne devient progressivement un actif stratégique à part entière — une expertise capitalisée, documentée, interrogeable en langage naturel, disponible 24h/24 et sans turn-over.</p>
+      <div class="highlight-box">
+        <p><strong>⚠️ Cloud Act &amp; RGPD :</strong> Utiliser ChatGPT pour traiter des données personnelles de clients ou d'employés sans DPA conforme constitue un transfert illicite hors UE. La CNIL peut prononcer des amendes allant jusqu'à 4% du chiffre d'affaires mondial ou 20 M€. Plusieurs mises en demeure ont déjà été envoyées à des entreprises françaises en 2025.</p>
       </div>
-      <div>
-        <div class="warning-box">
-          <p><strong>⚠️ Cloud Act &amp; RGPD :</strong> Utiliser ChatGPT pour traiter des données personnelles de clients ou d'employés sans DPA conforme constitue un <strong>transfert illicite hors UE</strong>. La CNIL peut prononcer des amendes allant jusqu'à <strong>4% du chiffre d'affaires mondial</strong> ou <strong>20 M€</strong>. Plusieurs mises en demeure ont déjà été envoyées à des entreprises françaises en 2025.</p>
-        </div>
-        <div class="highlight-box" style="margin-top:16px;">
-          <p><strong>Notre approche :</strong> Chaque déploiement Seven-YES part d'une revue de vos données, de leur sensibilité réglementaire et de votre exposition juridique. Nous ne déployons pas avant de comprendre ce que vous protégez.</p>
-        </div>
-      </div>
+      <p><strong>Notre approche :</strong> Chaque déploiement Seven‑YES part d'une revue de vos données, de leur sensibilité réglementaire et de votre exposition juridique. Nous ne déployons pas avant de comprendre ce que vous protégez.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- MODELES -->
-<section class="section section--alt" id="modeles">
-  <div class="wrap--mid">
-    <span class="section-num">02 — Notre stack</span>
-    <h2 class="section-title">Les modèles que nous déployons —<br><em>et pourquoi nous les choisissons.</em></h2>
-    <p class="section-lead">Il n'existe pas un seul bon modèle. Il existe le bon modèle pour votre cas d'usage, votre infrastructure, vos contraintes de latence et votre budget. Voici notre sélection, et la logique qui guide nos recommandations.</p>
+  <!-- Stack -->
+  <section id="notre-stack">
+    <div class="container">
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">02 — Notre stack</p>
+      <h2 class="section-title">Les modèles que nous déployons — et pourquoi nous les choisissons.</h2>
+      <p class="section-subtitle">Il n'existe pas un seul bon modèle. Il existe le bon modèle pour votre cas d'usage, votre infrastructure, vos contraintes de latence et votre budget. Voici notre sélection, et la logique qui guide nos recommandations.</p>
 
-    <div class="service-block">
-      <span class="service-block-num">Modèle 01</span>
-      <div class="two-col">
-        <div>
-          <h3>Mistral AI — Le champion souverain européen</h3>
-          <div class="prose">
-            <p><strong>Mistral AI est une startup française fondée à Paris en 2023</strong>, aujourd'hui valorisée à plusieurs milliards d'euros, qui produit certains des meilleurs modèles open source au monde. Nous déployons principalement <strong>Mistral Large</strong> pour les tâches complexes (analyse de contrats, rédaction, raisonnement juridique) et <strong>Mistral Small</strong> pour les applications à fort volume et faible latence (classification, extraction d'entités, résumé).</p>
-            <p>Mistral est notre recommandation par défaut pour les entreprises françaises pour trois raisons : performances comparables à GPT-4o sur les tâches en français, <strong>maîtrise totale des poids du modèle</strong> (vous pouvez l'exécuter hors ligne), et disponibilité native sur <strong>Scaleway</strong> — cloud français certifié SecNumCloud — ce qui simplifie considérablement le déploiement souverain. Mistral peut aussi être <strong>fine-tuné</strong> sur vos données propriétaires pour atteindre des performances supérieures à n'importe quel modèle généraliste sur votre domaine spécifique.</p>
-          </div>
-          <div class="service-tags"><span class="tag">Mistral Large</span><span class="tag">Mistral Small</span><span class="tag">Fine-tuning</span><span class="tag">Cloud Scaleway</span><span class="tag">On-premise</span></div>
-        </div>
-        <div>
-          <div class="pull-stat"><div class="num">🇫🇷</div><div class="txt">Mistral AI est français, fondé à Paris. Ses modèles sont disponibles sur Scaleway (cloud SecNumCloud). Votre IA reste en France, sous droit français.</div></div>
-        </div>
+      <div class="content-block">
+        <p style="font-weight:600;text-transform:uppercase;font-size:0.7rem;letter-spacing:1px;">Modèle 01</p>
+        <h3>Mistral AI — Le champion souverain européen</h3>
+        <p>Mistral AI est une startup française fondée à Paris en 2023, aujourd'hui valorisée à plusieurs milliards d'euros, qui produit certains des meilleurs modèles open source au monde. Nous déployons principalement Mistral Large pour les tâches complexes (analyse de contrats, rédaction, raisonnement juridique) et Mistral Small pour les applications à fort volume et faible latence (classification, extraction d'entités, résumé).</p>
+        <p>Mistral est notre recommandation par défaut pour les entreprises françaises pour trois raisons : performances comparables à GPT-4o sur les tâches en français, maîtrise totale des poids du modèle (vous pouvez l'exécuter hors ligne), et disponibilité native sur Scaleway — cloud français certifié SecNumCloud — ce qui simplifie considérablement le déploiement souverain. Mistral peut aussi être fine-tuné sur vos données propriétaires pour atteindre des performances supérieures à n'importe quel modèle généraliste sur votre domaine spécifique.</p>
+        <p>Mistral AI est français, fondé à Paris. Ses modèles sont disponibles sur Scaleway (cloud SecNumCloud). Votre IA reste en France, sous droit français.</p>
+      </div>
+
+      <div class="content-block">
+        <p style="font-weight:600;text-transform:uppercase;font-size:0.7rem;letter-spacing:1px;">Modèle 02</p>
+        <h3>Cohere Command R+ — Le maître du RAG souverain</h3>
+        <p>Cohere est le leader mondial de l'IA RAG (Retrieval-Augmented Generation) déployée en mode souverain. Command R+ est conçu spécifiquement pour le cas d'usage le plus fréquent en entreprise : l'interrogation de bases documentaires volumineuses. Si votre besoin est de permettre à vos équipes d'interroger en langage naturel des milliers de documents internes — contrats, procédures, documentation technique, emails archivés — Cohere Command R+ est notre recommandation première.</p>
+        <p>Il supporte nativement 23 langues, ce qui le rend particulièrement adapté aux entreprises avec des équipes internationales. Son architecture est optimisée pour le déploiement on-premise ou en VPC privé, avec une API compatible avec les standards d'entreprise. La précision de citation (il indique exactement d'où vient chaque information dans votre base documentaire) le rend particulièrement fiable pour les contextes où la traçabilité des sources est obligatoire — juridique, finance, santé.</p>
+        <p><strong>23 langues</strong> supportées nativement par Cohere Command R+. Idéal pour les entreprises françaises avec des filiales ou clients internationaux.</p>
+      </div>
+
+      <div class="content-block">
+        <p style="font-weight:600;text-transform:uppercase;font-size:0.7rem;letter-spacing:1px;">Modèle 03</p>
+        <h3>Llama 4 (Meta) — Open weights, contrôle total</h3>
+        <p>Meta a publié les poids de Llama 4 en open source, ce qui signifie que vous pouvez en prendre possession complète : télécharger les fichiers, les exécuter sur vos propres GPUs, les modifier, les fine-tuner sans aucune restriction contractuelle avec Meta. C'est le choix ultime pour les entreprises qui veulent un contrôle absolu sur leur infrastructure IA.</p>
+        <p>Llama 4 atteint des performances comparables aux meilleurs modèles propriétaires sur la plupart des benchmarks. Nos ingénieurs l'ont déployé avec succès dans des environnements sans aucune connexion internet (air-gapped), notamment pour des clients dans les secteurs de la défense, de la santé et des infrastructures critiques. Si votre secteur interdit par nature toute connexion externe, Llama est la seule solution viable.</p>
+        <p><strong>0 dépendance</strong> à Meta pour faire fonctionner Llama 4. Une fois les poids téléchargés, votre modèle tourne de façon totalement autonome, hors ligne.</p>
       </div>
     </div>
+  </section>
 
-    <div class="service-block">
-      <span class="service-block-num">Modèle 02</span>
-      <div class="two-col">
-        <div>
-          <h3>Cohere Command R+ — Le maître du RAG souverain</h3>
-          <div class="prose">
-            <p><strong>Cohere est le leader mondial de l'IA RAG (Retrieval-Augmented Generation) déployée en mode souverain</strong>. Command R+ est conçu spécifiquement pour le cas d'usage le plus fréquent en entreprise : l'interrogation de bases documentaires volumineuses. Si votre besoin est de permettre à vos équipes d'interroger en langage naturel des milliers de documents internes — contrats, procédures, documentation technique, emails archivés — Cohere Command R+ est notre recommandation première.</p>
-            <p>Il supporte nativement <strong>23 langues</strong>, ce qui le rend particulièrement adapté aux entreprises avec des équipes internationales. Son architecture est optimisée pour le déploiement <strong>on-premise ou en VPC privé</strong>, avec une API compatible avec les standards d'entreprise. La <strong>précision de citation</strong> (il indique exactement d'où vient chaque information dans votre base documentaire) le rend particulièrement fiable pour les contextes où la traçabilité des sources est obligatoire — juridique, finance, santé.</p>
-          </div>
-          <div class="service-tags"><span class="tag">RAG natif</span><span class="tag">23 langues</span><span class="tag">On-premise</span><span class="tag">Citation des sources</span></div>
+  <!-- Déploiement -->
+  <section>
+    <div class="container">
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">03 — Déploiement</p>
+      <h2 class="section-title">Trois architectures. Une exigence : vos données ne bougent pas.</h2>
+
+      <div class="content-block">
+        <h3>A — Sur vos serveurs (On-Premise)</h3>
+        <p>Nos ingénieurs installent le modèle directement sur vos serveurs GPU existants ou sur du matériel que nous dimensionnons avec vous. Aucune connexion externe n'est requise après l'installation. Vous obtenez le maximum de contrôle, une latence minimale et une indépendance totale. Ce mode est obligatoire pour les secteurs très régulés (défense, santé de niveau HDS, nucléaire). L'investissement initial couvre le matériel (si nécessaire), l'installation, le fine-tuning sur vos données et les tests de validation. Le coût d'exploitation mensuel se réduit ensuite aux coûts énergétiques et à notre service de maintenance.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>B — Cloud français SecNumCloud (Scaleway / OVHcloud / Outscale)</h3>
+        <p>Nous déployons le modèle dans votre espace privé virtuel (VPC) chez Scaleway, certifié SecNumCloud par l'ANSSI. Scaleway est une entreprise française dont les datacenters sont en France, soumis exclusivement au droit français et européen. Cette architecture offre l'élasticité du cloud (vous pouvez monter en charge en quelques minutes) tout en garantissant que vos données ne quittent jamais le territoire national. C'est le mode recommandé pour 80% de nos clients PME : excellent rapport performance/coût, déploiement en 1 à 2 semaines, sans investissement matériel.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>C — Mode hybride — Modèle on-premise, orchestration cloud</h3>
+        <p>Architecture avancée dans laquelle le modèle LLM tourne sur votre infrastructure (pour les inférences sur données sensibles) tandis que l'orchestration, le monitoring et les interfaces utilisateurs sont hébergées dans le cloud. Cela permet de combiner la sécurité maximale des données sensibles avec la flexibilité du cloud pour les couches applicatives. Recommandé pour les grandes PME et ETI avec des données de sensibilité variable selon les services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section>
+    <div class="container">
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">04 — Applications</p>
+      <h2 class="section-title">Ce qu'on fait concrètement avec votre IA souveraine.</h2>
+      <p class="section-subtitle">Le déploiement du modèle est un point de départ, pas une finalité. Voici les applications les plus fréquentes que nous construisons au-dessus de votre infrastructure IA souveraine.</p>
+
+      <div class="content-block">
+        <h3>Assistant interne entreprise — La base documentaire qui répond</h3>
+        <p>Vos équipes RH, techniques, commerciales et juridiques passent en moyenne 2,5 heures par jour à chercher des informations dans des documents internes dispersés (SharePoint, emails, dossiers réseau, ERP). Un assistant IA souverain branché sur votre base documentaire via RAG permet d'interroger l'ensemble de cette connaissance en langage naturel, avec citation des sources. Un commercial peut demander "Quelles sont nos conditions de garantie pour les clients du secteur automobile ?" et obtenir la bonne réponse en 3 secondes, extraite du bon contrat, avec le numéro de clause. Le gain de productivité documenté est de 1,5 à 2 heures par collaborateur et par jour.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>Analyse de contrats et veille juridique</h3>
+        <p>Les cabinets d'avocats et les directions juridiques d'entreprise utilisent notre stack souveraine pour automatiser la revue de contrats : le modèle lit un document, identifie les clauses à risque selon votre référentiel, compare avec vos modèles de contrats types et génère un mémo de synthèse structuré. Branché sur Légifrance et les bases de jurisprudence pertinentes via RAG, il contextualise chaque clause dans le droit positif en vigueur. Ce qui prenait 3 heures à un junior prend maintenant 8 minutes à un associé, avec une qualité supérieure car le modèle ne se fatigue pas et ne manque aucune clause.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>Génération de rapports et comptes-rendus</h3>
+        <p>Vos réunions de direction génèrent des comptes-rendus que personne n'a le temps de rédiger correctement. Votre ingénierie produit des rapports techniques que les commerciaux ne savent pas lire. Votre service qualité rédige des non-conformités que le management ne comprend pas. Un agent IA souverain, entraîné sur votre style et votre vocabulaire, transforme des notes brutes ou une transcription audio en document structuré, traduit le jargon technique en langage business, et adapte automatiquement le niveau de détail selon le destinataire. Sans aucune donnée qui sort de votre réseau.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>Support technique niveau 1 et 2 — Interne</h3>
+        <p>Votre équipe IT passe une part considérable de son temps à répondre à des questions répétitives de vos collaborateurs : reset de mot de passe, configuration VPN, utilisation d'outils internes, procédures d'onboarding. Un agent IA souverain, branché sur votre base de connaissance IT et vos procédures internes, prend en charge ces tickets niveau 1 et 2 — en restant dans votre réseau privé, sans exposer la moindre information interne à l'extérieur. Résultat observé : les tickets traités par un humain diminuent de 60 à 75% en 3 mois.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarification -->
+  <section>
+    <div class="container">
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">05 — Investissement</p>
+      <h2 class="section-title">Tarification transparente. Pas de mauvaises surprises.</h2>
+      <p class="section-subtitle">L'IA souveraine coûte moins cher qu'un salarié. Bien moins cher. Voici les chiffres réels, sans habillage marketing.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h4>Cloud souverain</h4>
+          <p><strong>à partir de 5 000€ setup</strong> puis 300€ à 2 000€/mois selon volume</p>
+          <p>Hébergement Scaleway SecNumCloud, modèle sélectionné et configuré, fine-tuning initial sur vos documents, interface utilisateur sur mesure, service managé : supervision, mises à jour, conformité RGPD + AI Act documentée.</p>
         </div>
-        <div>
-          <div class="pull-stat"><div class="num">23</div><div class="txt">langues supportées nativement par Cohere Command R+. Idéal pour les entreprises françaises avec des filiales ou clients internationaux.</div></div>
+        <div class="pricing-card">
+          <h4>On-Premise</h4>
+          <p><strong>à partir de 8 000€ setup</strong> puis 500€ à 1 500€/mois (maintenance)</p>
+          <p>Déploiement sur vos serveurs existants, audit infrastructure préalable, installation GPU + modèle, fine-tuning sur votre base documentaire, zéro connexion externe requise, SLA maintenance & supervision inclus.</p>
+        </div>
+        <div class="pricing-card">
+          <h4>Hybride</h4>
+          <p><strong>Sur devis</strong> selon architecture et volume</p>
+          <p>Architecture personnalisée, données sensibles on-premise, interface & orchestration cloud, multi-agents possibles, idéal ETI & grands groupes, SLA premium disponible.</p>
         </div>
       </div>
-    </div>
 
-    <div class="service-block">
-      <span class="service-block-num">Modèle 03</span>
-      <div class="two-col">
-        <div>
-          <h3>Llama 4 (Meta) — Open weights, contrôle total</h3>
-          <div class="prose">
-            <p>Meta a publié les poids de Llama 4 en open source, ce qui signifie que <strong>vous pouvez en prendre possession complète</strong> : télécharger les fichiers, les exécuter sur vos propres GPUs, les modifier, les fine-tuner sans aucune restriction contractuelle avec Meta. C'est le choix ultime pour les entreprises qui veulent un <strong>contrôle absolu</strong> sur leur infrastructure IA.</p>
-            <p>Llama 4 atteint des performances comparables aux meilleurs modèles propriétaires sur la plupart des benchmarks. Nos ingénieurs l'ont déployé avec succès dans des environnements sans aucune connexion internet (air-gapped), notamment pour des clients dans les secteurs de la <strong>défense, de la santé et des infrastructures critiques</strong>. Si votre secteur interdit par nature toute connexion externe, Llama est la seule solution viable.</p>
-          </div>
-          <div class="service-tags"><span class="tag">Open weights</span><span class="tag">Air-gapped</span><span class="tag">On-premise</span><span class="tag">Fine-tuning libre</span></div>
-        </div>
-        <div>
-          <div class="pull-stat"><div class="num">0</div><div class="txt">dépendance à Meta pour faire fonctionner Llama 4. Une fois les poids téléchargés, votre modèle tourne de façon totalement autonome, hors ligne.</div></div>
-        </div>
+      <p><strong>Repère :</strong> Un salarié coûte en moyenne 42 000€ à 66 000€ par an (chargé). Notre déploiement on-premise complet représente 18 000€ à 30 000€ la première année, puis 6 000€ à 18 000€ les années suivantes. Votre ROI est atteint avant la fin du premier exercice fiscal.</p>
+    </div>
+  </section>
+
+  <!-- Témoignage -->
+  <section>
+    <div class="container">
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">06 — Témoignage</p>
+      <div class="testimonial">
+        <p>« En tant que cabinet d'avocats d'affaires, nous avions une contrainte absolue : nos données client ne pouvaient sous aucun prétexte quitter notre infrastructure. Seven‑YES a déployé un assistant IA souverain directement sur notre serveur interne — branché sur Légifrance et nos archives de 15 ans de dossiers. Mes associés interrogent maintenant cette base en langage naturel. La recherche documentaire qui prenait 3 heures prend 10 minutes. Nous n'avons pas licencié de collaborateurs — nous les avons repositionnés sur des tâches à valeur ajoutée. Et aucune donnée client n'a jamais quitté notre réseau. »</p>
+        <p class="author">Associé gérant — Cabinet d'avocats d'affaires Paris, 14 avocats<br>Déploiement : Llama 4 on-premise + RAG Légifrance</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- DEPLOIEMENT -->
-<section class="section">
-  <div class="wrap--mid">
-    <span class="section-num">03 — Déploiement</span>
-    <h2 class="section-title">Trois architectures. <em>Une exigence :</em><br>vos données ne bougent pas.</h2>
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <p style="font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:1px;">07 — Questions fréquentes</p>
+      <h2 class="section-title">Ce qu'on nous demande toujours.</h2>
 
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">A</div>
-        <div>
-          <h4>Sur vos serveurs (On-Premise)</h4>
-          <p>Nos ingénieurs installent le modèle directement sur vos serveurs GPU existants ou sur du matériel que nous dimensionnons avec vous. <strong>Aucune connexion externe n'est requise après l'installation.</strong> Vous obtenez le maximum de contrôle, une latence minimale et une indépendance totale. Ce mode est obligatoire pour les secteurs très régulés (défense, santé de niveau HDS, nucléaire). L'investissement initial couvre le matériel (si nécessaire), l'installation, le fine-tuning sur vos données et les tests de validation. Le coût d'exploitation mensuel se réduit ensuite aux coûts énergétiques et à notre service de maintenance.</p>
-        </div>
+      <div class="faq-item">
+        <h4>Est-ce que les performances d'un modèle open source déployé chez moi sont comparables à GPT-4o ?</h4>
+        <p>Oui, sur vos cas d'usage spécifiques — et souvent supérieures. GPT-4o est un modèle généraliste entraîné pour répondre à tout. Un modèle fine-tuné sur vos documents et vos processus métier est plus précis, plus rapide et plus fiable sur votre domaine. Nous documentons systématiquement les benchmarks comparatifs lors du déploiement.</p>
       </div>
-      <div class="step">
-        <div class="step-num">B</div>
-        <div>
-          <h4>Cloud français SecNumCloud (Scaleway / OVHcloud / Outscale)</h4>
-          <p>Nous déployons le modèle dans votre <strong>espace privé virtuel (VPC) chez Scaleway</strong>, certifié SecNumCloud par l'ANSSI. Scaleway est une entreprise française dont les datacenters sont en France, soumis exclusivement au droit français et européen. Cette architecture offre l'élasticité du cloud (vous pouvez monter en charge en quelques minutes) tout en garantissant que vos données ne quittent jamais le territoire national. C'est le mode recommandé pour 80% de nos clients PME : excellent rapport performance/coût, déploiement en 1 à 2 semaines, sans investissement matériel.</p>
-        </div>
+
+      <div class="faq-item">
+        <h4>Combien de temps prend un déploiement ?</h4>
+        <p>Cloud souverain : 1 à 2 semaines. On-premise : 3 à 6 semaines (incluant l'installation matérielle si nécessaire). Nous fournissons un calendrier précis après l'audit initial.</p>
       </div>
-      <div class="step">
-        <div class="step-num">C</div>
-        <div>
-          <h4>Mode hybride — Modèle on-premise, orchestration cloud</h4>
-          <p>Architecture avancée dans laquelle le modèle LLM tourne sur votre infrastructure (pour les inférences sur données sensibles) tandis que l'orchestration, le monitoring et les interfaces utilisateurs sont hébergées dans le cloud. Cela permet de <strong>combiner la sécurité maximale des données sensibles</strong> avec la flexibilité du cloud pour les couches applicatives. Recommandé pour les grandes PME et ETI avec des données de sensibilité variable selon les services.</p>
-        </div>
+
+      <div class="faq-item">
+        <h4>Puis-je commencer en cloud puis migrer en on-premise ?</h4>
+        <p>Absolument. C'est même un parcours fréquent : valider le ROI en mode cloud, puis internaliser pour réduire les coûts récurrents et maximiser le contrôle. L'architecture est conçue pour cette transition.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CAS D'USAGE -->
-<section class="section section--alt">
-  <div class="wrap--mid">
-    <span class="section-num">04 — Applications</span>
-    <h2 class="section-title">Ce qu'on fait concrètement<br><em>avec votre IA souveraine.</em></h2>
-    <p class="section-lead">Le déploiement du modèle est un point de départ, pas une finalité. Voici les applications les plus fréquentes que nous construisons au-dessus de votre infrastructure IA souveraine.</p>
-
-    <div class="prose">
-      <h3>Assistant interne entreprise — La base documentaire qui répond</h3>
-      <p>Vos équipes RH, techniques, commerciales et juridiques passent en moyenne <strong>2,5 heures par jour à chercher des informations</strong> dans des documents internes dispersés (SharePoint, emails, dossiers réseau, ERP). Un assistant IA souverain branché sur votre base documentaire via RAG permet d'interroger l'ensemble de cette connaissance en langage naturel, avec citation des sources. Un commercial peut demander "Quelles sont nos conditions de garantie pour les clients du secteur automobile ?" et obtenir la bonne réponse en 3 secondes, extraite du bon contrat, avec le numéro de clause. <strong>Le gain de productivité documenté est de 1,5 à 2 heures par collaborateur et par jour.</strong></p>
-
-      <h3>Analyse de contrats et veille juridique</h3>
-      <p>Les cabinets d'avocats et les directions juridiques d'entreprise utilisent notre stack souveraine pour <strong>automatiser la revue de contrats</strong> : le modèle lit un document, identifie les clauses à risque selon votre référentiel, compare avec vos modèles de contrats types et génère un mémo de synthèse structuré. Branché sur Légifrance et les bases de jurisprudence pertinentes via RAG, il contextualise chaque clause dans le droit positif en vigueur. Ce qui prenait 3 heures à un junior prend maintenant 8 minutes à un associé, avec une qualité supérieure car le modèle ne se fatigue pas et ne manque aucune clause.</p>
-
-      <h3>Génération de rapports et comptes-rendus</h3>
-      <p>Vos réunions de direction génèrent des comptes-rendus que personne n'a le temps de rédiger correctement. Votre ingénierie produit des rapports techniques que les commerciaux ne savent pas lire. Votre service qualité rédige des non-conformités que le management ne comprend pas. Un agent IA souverain, <strong>entraîné sur votre style et votre vocabulaire</strong>, transforme des notes brutes ou une transcription audio en document structuré, traduit le jargon technique en langage business, et adapte automatiquement le niveau de détail selon le destinataire. Sans aucune donnée qui sort de votre réseau.</p>
-
-      <h3>Support technique niveau 1 et 2 — Interne</h3>
-      <p>Votre équipe IT passe une part considérable de son temps à répondre à des questions répétitives de vos collaborateurs : reset de mot de passe, configuration VPN, utilisation d'outils internes, procédures d'onboarding. Un agent IA souverain, <strong>branché sur votre base de connaissance IT et vos procédures internes</strong>, prend en charge ces tickets niveau 1 et 2 — en restant dans votre réseau privé, sans exposer la moindre information interne à l'extérieur. Résultat observé : les tickets traités par un humain diminuent de 60 à 75% en 3 mois.</p>
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Vos données méritent mieux qu'une API américaine.</h2>
+      <p><a href="contact.html" class="btn">Audit de faisabilité gratuit →</a></p>
     </div>
-  </div>
-</section>
-
-<!-- TARIFS -->
-<section class="section" id="tarifs">
-  <div class="wrap--mid">
-    <span class="section-num">05 — Investissement</span>
-    <h2 class="section-title">Tarification <em>transparente.</em><br>Pas de mauvaises surprises.</h2>
-    <p class="section-lead">L'IA souveraine coûte moins cher qu'un salarié. Bien moins cher. Voici les chiffres réels, sans habillage marketing.</p>
-
-    <div class="price-grid">
-      <div class="price-card">
-        <h3>Cloud souverain</h3>
-        <div class="price">à partir de 5 000€<sub> setup</sub></div>
-        <div class="price-note">puis 300€ à 2 000€/mois selon volume</div>
-        <ul>
-          <li><strong>Hébergement Scaleway SecNumCloud</strong></li>
-          <li>Modèle sélectionné et configuré</li>
-          <li>Fine-tuning initial sur vos documents</li>
-          <li>Interface utilisateur sur mesure</li>
-          <li>Service managé : supervision, mises à jour</li>
-          <li>Conformité RGPD + AI Act documentée</li>
-        </ul>
-      </div>
-      <div class="price-card featured">
-        <h3>On-Premise</h3>
-        <div class="price">à partir de 8 000€<sub> setup</sub></div>
-        <div class="price-note">puis 500€ à 1 500€/mois (maintenance)</div>
-        <ul>
-          <li><strong>Déploiement sur vos serveurs existants</strong></li>
-          <li>Audit infrastructure préalable</li>
-          <li>Installation GPU + modèle</li>
-          <li>Fine-tuning sur votre base documentaire</li>
-          <li>Zéro connexion externe requise</li>
-          <li>SLA maintenance &amp; supervision inclus</li>
-        </ul>
-      </div>
-      <div class="price-card">
-        <h3>Hybride</h3>
-        <div class="price">Sur devis</div>
-        <div class="price-note">selon architecture et volume</div>
-        <ul>
-          <li><strong>Architecture personnalisée</strong></li>
-          <li>Données sensibles on-premise</li>
-          <li>Interface &amp; orchestration cloud</li>
-          <li>Multi-agents possibles</li>
-          <li>Idéal ETI &amp; grands groupes</li>
-          <li>SLA premium disponible</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="highlight-box" style="margin-top:40px;">
-      <p><strong>Repère :</strong> Un salarié coûte en moyenne 42 000€ à 66 000€ par an (chargé). Notre déploiement on-premise complet représente 18 000€ à 30 000€ la première année, puis 6 000€ à 18 000€ les années suivantes. <strong>Votre ROI est atteint avant la fin du premier exercice fiscal.</strong></p>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIAL -->
-<section class="section section--alt">
-  <div class="wrap--narrow">
-    <span class="section-num">06 — Témoignage</span>
-    <div class="testimonial">
-      <p>"En tant que cabinet d'avocats d'affaires, nous avions une contrainte absolue : nos données client ne pouvaient sous aucun prétexte quitter notre infrastructure. Seven-YES a déployé un assistant IA souverain directement sur notre serveur interne — branché sur Légifrance et nos archives de 15 ans de dossiers. Mes associés interrogent maintenant cette base en langage naturel. La recherche documentaire qui prenait 3 heures prend 10 minutes. <strong>Nous n'avons pas licencié de collaborateurs — nous les avons repositionnés sur des tâches à valeur ajoutée.</strong> Et aucune donnée client n'a jamais quitté notre réseau."</p>
-      <div class="author"><strong>Associé gérant — Cabinet d'avocats d'affaires</strong><br>Paris, 14 avocats · Déploiement : Llama 4 on-premise + RAG Légifrance</div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section">
-  <div class="wrap--narrow">
-    <span class="section-num">07 — Questions fréquentes</span>
-    <h2 class="section-title">Ce qu'on nous demande <em>toujours.</em></h2>
-
-    <div class="faq-item">
-      <div class="faq-q">Est-ce que les performances d'un modèle open source déployé chez moi sont comparables à GPT-4o ?</div>
-      <div class="faq-a"><strong>Oui, sur vos cas d'usage spécifiques — et souvent supérieures.</strong> GPT-4o est un modèle généraliste entraîné pour répondre à tout. Un modèle Mistral Large fine-tuné sur vos 10 000 contrats internes, vos procédures et votre vocabulaire métier va systématiquement surperformer GPT-4o sur ce périmètre précis. La puissance des LLM spécialisés sur un domaine est largement documentée dans la littérature académique et vérifiée dans nos déploiements.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Quelle infrastructure matérielle est nécessaire pour un déploiement on-premise ?</div>
-      <div class="faq-a">Cela dépend du modèle et du volume de requêtes. Pour <strong>Mistral Small (7B paramètres)</strong>, un serveur équipé d'un GPU NVIDIA A100 ou RTX 4090 est suffisant pour 50 à 100 utilisateurs simultanés. Pour <strong>Mistral Large (123B paramètres)</strong>, il faut un cluster de 4 à 8 GPUs A100 ou H100. Nos ingénieurs réalisent systématiquement un <strong>dimensionnement matériel</strong> avant le déploiement, avec plusieurs options de coût. Nous pouvons aussi vous recommander des partenaires matériel qui ont des délais de livraison courts.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Le fine-tuning sur mes données est-il obligatoire ?</div>
-      <div class="faq-a">Non, mais il est fortement recommandé. Il existe deux façons d'injecter votre contexte dans un LLM : <strong>le RAG</strong> (on lui fournit les documents pertinents au moment de chaque requête, sans modifier le modèle) et <strong>le fine-tuning</strong> (on modifie les poids du modèle pour lui apprendre votre domaine). Le RAG est plus rapide à mettre en place et permet des mises à jour instantanées de votre base documentaire. Le fine-tuning produit un modèle plus performant sur votre vocabulaire et vos patterns de raisonnement, mais demande plus de temps et des données d'entraînement de qualité. <strong>La plupart de nos déploiements combinent les deux.</strong></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Que se passe-t-il si Mistral ou Meta met à jour son modèle ?</div>
-      <div class="faq-a">Votre modèle déployé n'est pas affecté automatiquement — c'est un avantage, pas un inconvénient. Vous êtes en production avec une version stable. Notre service managé mensuel inclut une <strong>veille technologique continue</strong> : nous vous informons des nouvelles versions pertinentes, évaluons le gain de performance, et planifions les migrations avec vous, sans jamais vous imposer une mise à jour non validée.</div>
-    </div>
-  </div>
-</section>
-
-<div class="cta-band">
-  <div class="wrap--narrow">
-    <h2>Votre IA. Vos données. <em>Vos règles.</em></h2>
-    <p>Nos ingénieurs analysent votre infrastructure, vos données et vos contraintes réglementaires en 30 minutes. Vous repartez avec un plan d'architecture concret et un chiffrage.</p>
-    <div class="btns">
-      <a href="contact.html" class="btn btn-red">Demander mon audit de faisabilité →</a>
-      <a href="employes-ia.html" class="btn btn-outline-white">Voir nos Employés IA</a>
-    </div>
-  </div>
-</div>
+  </section>
+</main>
 
 <footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="logo">Seven<em>-YES</em></div>
-        <p>Agence IA pour PME françaises.<br>Ingénieurs & Docteurs en Sciences.<br>Lyon — Paris — France.</p>
-        <div class="footer-badge">🔒 Déploiements souverains — Cloud français</div>
-      </div>
-      <div>
-        <h5>Services</h5>
-        <a href="ia-souveraine.html">IA Souveraine & Privée</a>
-        <a href="agentforce.html">Salesforce Agentforce</a>
-        <a href="employes-ia.html">Employés IA</a>
-        <a href="conseil-ia.html">Conseil & Audit IA</a>
-      </div>
-      <div>
-        <h5>Agents IA</h5>
-        <a href="juriste-ia.html">Juriste IA</a>
-        <a href="service-client-ia.html">Service Client IA</a>
-        <a href="comptable-ia.html">Comptable IA</a>
-        <a href="marketing-ia.html">Marketing IA</a>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <a href="contact.html">Audit gratuit →</a>
-        <a href="mailto:contact@seven-yes.fr">contact@seven-yes.fr</a>
-        <p style="margin-top:8px;">Jonathan — Business Developer AI<br>Lyon, France</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Seven-YES. <strong style="color:#666;">Agence IA</strong> Lyon, Paris. Tous droits réservés.</span>
-      <span>RGPD · AI Act · <strong style="color:#666;">IA Souveraine</strong></span>
-    </div>
+  <div class="container">
+    <p>© 2026 Seven‑YES — <a href="contact.html">contact@seven-yes.com</a></p>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
