@@ -1,107 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez Seven-YES | Agence IA | Audit gratuit 30 minutes</title>
-    <meta name="description" content="Premier échange gratuit de 30 minutes. Nous analysons votre besoin et vous proposons une solution concrète, chiffrée, avec un calendrier. Lyon, Paris, France.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Seven Yes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Seven<span>-YES</span></div>
-                <div class="nav-links">
-                    <a href="index.html">Accueil</a>
-                    <a href="ia-souveraine.html">IA Souveraine</a>
-                    <a href="agentforce.html">Agentforce</a>
-                    <a href="employes-ia.html">Employés IA</a>
-                    <a href="logiciel-marque-blanche.html">Marque Blanche</a>
-                    <a href="conseil-strategie.html">Conseil</a>
-                    <a href="conformite.html">Conformité</a>
-                    <a href="a-propos.html">À Propos</a>
-                    <a href="cas-clients.html">Cas Clients</a>
-                    <a href="blog.html">Ressources</a>
-                    <a href="contact.html" class="btn btn-primary">Contact</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Seven Yes</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="ia-souveraine.html">IA Souveraine</a></li>
+        <li><a href="agentforce.html">Agentforce</a></li>
+        <li><a href="employes-ia.html">Employés IA</a></li>
+        <li><a href="conformite.html">Conformité</a></li>
+        <li><a href="cas-clients.html">Cas clients</a></li>
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="contact.html" class="btn-contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1><strong>Parlons de votre projet IA</strong>. 30 minutes, gratuit, sans engagement.</h1>
-            <p>Un <strong>échange d'experts</strong>, pas une présentation commerciale. Nous analysons votre besoin et vous proposons une <strong>solution concrète, chiffrée, avec un calendrier</strong>.</p>
-        </div>
-    </section>
+  <main class="section container" style="max-width: 700px;">
+    <h1 class="hero-title" style="font-size:2.5rem;">Parlons de votre projet</h1>
+    <p style="color: var(--gray-600); margin-bottom: 2rem;">
+      Audit gratuit de votre infrastructure IA, démo Agentforce, ou demande de formation. Remplissez le formulaire et nous revenons vers vous sous 24h.
+    </p>
 
-    <section>
-        <div class="container" style="max-width:700px;">
-            <h2 class="section-title">Ce que vous obtiendrez lors de cet échange.</h2>
-            <p>• Une <strong>analyse de votre besoin</strong> par un ingénieur, pas par un commercial</p>
-            <p>• Une <strong>première estimation de coût</strong> (setup + fonctionnement)</p>
-            <p>• Une <strong>estimation de ROI</strong> basée sur 200+ projets</p>
-            <p>• Un <strong>calendrier indicatif</strong> de déploiement</p>
-            <p>• Une <strong>recommandation honnête</strong> — si l'IA n'est pas la solution, nous vous le dirons</p>
+    <form style="display:flex; flex-direction:column; gap:1.5rem;">
+      <div>
+        <label style="font-weight:500; display:block; margin-bottom:0.25rem;">Nom complet</label>
+        <input type="text" style="width:100%; padding:0.75rem; border:1px solid var(--gray-200); border-radius:8px; font-family:inherit;">
+      </div>
+      <div>
+        <label style="font-weight:500; display:block; margin-bottom:0.25rem;">Email professionnel</label>
+        <input type="email" style="width:100%; padding:0.75rem; border:1px solid var(--gray-200); border-radius:8px; font-family:inherit;">
+      </div>
+      <div>
+        <label style="font-weight:500; display:block; margin-bottom:0.25rem;">Message</label>
+        <textarea rows="5" style="width:100%; padding:0.75rem; border:1px solid var(--gray-200); border-radius:8px; font-family:inherit;"></textarea>
+      </div>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </main>
 
-            <h2 class="section-title" style="margin-top:40px;">Écrivez-nous.</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Nom &amp; Prénom</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="company">Entreprise</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email professionnel</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Décrivez votre besoin en quelques lignes</label>
-                    <textarea id="message" name="message" placeholder="Exemple : Nous sommes une PME de 50 personnes, nous cherchons à automatiser notre service client. Nous recevons environ 300 tickets par mois..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-accent" style="font-size:1rem; padding:14px 36px;">Envoyer →</button>
-            </form>
-
-            <h2 class="section-title" style="margin-top:40px;">Ou appelez-nous directement.</h2>
-            <p><strong>Jonathan — Business Developer AI</strong></p>
-            <p>07 53 95 00 48</p>
-            <p>jonathan-cg-investments@proton.me</p>
-            <p><strong>Seven-YES</strong><br>Lyon, France<br>Interventions partout en France</p>
-
-            <p style="margin-top:24px; padding:18px; background:var(--surface);"><strong>Délai de réponse garanti :</strong> 24 heures ouvrées. Nous lisons chaque message personnellement. Pas de réponse automatique générée par une IA — nous trouvons que ce serait ironique.</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div>
-                <h4>Seven-YES</h4>
-                <p><strong>Agence IA</strong> experte — <strong>Ingénieurs &amp; Docteurs en sciences</strong>.<br>Lyon — Paris — France.</p>
-            </div>
-            <div>
-                <h4>Services</h4>
-                <p><a href="ia-souveraine.html">IA Souveraine</a></p>
-                <p><a href="agentforce.html">Agentforce</a></p>
-                <p><a href="employes-ia.html">Employés IA</a></p>
-                <p><a href="logiciel-marque-blanche.html">Marque Blanche</a></p>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <p>jonathan-cg-investments@proton.me</p>
-                <p>Lyon, France</p>
-            </div>
-        </div>
-        <div class="container bottom">
-            <p>© 2026 Seven-YES. <strong>Agence IA</strong> — Lyon, France.</p>
-        </div>
-    </footer>
+  <footer class="main-footer"><div class="container">© 2026 Seven Yes</div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
