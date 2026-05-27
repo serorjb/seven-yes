@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formation IA – CPF éligible – Seven Yes</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formation IA — Code with Claude | CPF éligible | Seven‑YES</title>
+<meta name="description" content="Formation pratique au développement avec Claude et Mistral. Programme éligible au CPF. Bootcamp 2 jours, financement jusqu'à 2 160€ pris en charge.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container navbar">
-      <a href="index.html" class="logo">Seven Yes</a>
-      <button class="menu-toggle" aria-label="Menu">☰</button>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Seven<span>-YES</span></a>
+      <button class="menu-toggle" aria-label="Menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;display:none;">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="ia-souveraine.html">IA Souveraine</a></li>
@@ -21,30 +24,78 @@
         <li><a href="formation.html">Formation</a></li>
         <li><a href="contact.html" class="btn-contact">Contact</a></li>
       </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Accueil</a> › Formation</p>
+      <h1>Formation "Code with Claude" — Boostez vos équipes à l'IA générative</h1>
+      <p>Un programme pratique pour maîtriser le développement avec les modèles Claude (Anthropic) et Mistral AI. <strong>Éligible au CPF</strong>, cette formation peut être intégralement financée par votre Compte Personnel de Formation.</p>
+      <p><a href="contact.html" class="btn">Je veux former mon équipe →</a></p>
     </div>
-  </header>
+  </section>
 
-  <main class="section container">
-    <h1 class="hero-title" style="font-size:2.8rem;">Formation “Code with Claude” – Boostez vos équipes</h1>
-    <p class="hero-subtitle">
-      Un programme pratique pour maîtriser le développement avec les modèles Claude et Mistral. <strong>Éligible au CPF</strong>, cette formation peut être financée par votre compte personnel de formation.
-    </p>
-
-    <div style="background: var(--gray-50); border-radius: var(--radius); padding: 2rem; margin: 2rem 0;">
-      <h2 style="font-weight:700; margin-bottom:0.5rem;">💰 Financement CPF</h2>
-      <p>Depuis 2026, chaque salarié dispose d’un crédit annuel de 500 € (plafond 5 000 €). Le coût de cette formation intensive (2 jours) est de <strong>2 160 €</strong>, intégralement pris en charge par le CPF dans la plupart des cas. Nous vous accompagnons dans la demande de prise en charge.</p>
+  <!-- CPF Info -->
+  <section>
+    <div class="container">
+      <div class="highlight-box">
+        <h2>💰 Financement CPF — Vos droits formation</h2>
+        <p>Depuis 2026, chaque salarié dispose d'un crédit annuel de <strong>500 €</strong> sur son Compte Personnel de Formation, avec un plafond total de <strong>5 000 €</strong>. Le coût de cette formation intensive (2 jours) est de <strong>2 160 €</strong> par personne — un montant intégralement pris en charge par le CPF dans la grande majorité des cas.</p>
+        <p>Nous vous accompagnons dans toutes les démarches administratives : éligibilité, demande de prise en charge, convention de formation. Vous n'avez rien à gérer — nous nous occupons de tout.</p>
+      </div>
     </div>
+  </section>
 
-    <h2 style="font-size:2rem; margin-top:3rem;">Au programme</h2>
-    <div class="cards-grid">
-      <div class="card"><h3>Fondamentaux Claude & API</h3><p>Premiers pas avec l’API Anthropic, prompt engineering avancé, gestion des tokens.</p></div>
-      <div class="card"><h3>Intégration Agentforce</h3><p>Connecter vos agents Salesforce aux capacités de Claude.</p></div>
-      <div class="card"><h3>Déploiement souverain</h3><p>Hébergement sur cloud français, conformité RGPD/AI Act.</p></div>
+  <!-- Pourquoi cette formation -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Pourquoi former vos équipes à Claude et Mistral ?</h2>
+      <p>L'IA générative n'est pas un effet de mode. Les entreprises qui forment leurs collaborateurs aujourd'hui prennent une avance décisive sur leurs concurrents. Cette formation est conçue pour des professionnels qui veulent aller au-delà du prompt grand public et comprendre comment intégrer l'IA dans leurs processus métier réels.</p>
+      <p>Contrairement aux formations généralistes "ChatGPT pour tous", notre programme se concentre sur les deux écosystèmes les plus pertinents pour les entreprises françaises : <strong>Claude (Anthropic)</strong> pour ses capacités de raisonnement et sa fiabilité, et <strong>Mistral AI</strong> pour la souveraineté et le déploiement on-premise.</p>
     </div>
+  </section>
 
-    <div style="margin-top: 3rem;">
-      <h2 style="font-size:2rem; margin-bottom:1rem;">Aperçu vidéo de la formation</h2>
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: var(--radius);">
+  <!-- Programme -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Au programme — 2 jours intensifs.</h2>
+
+      <div class="content-block">
+        <h3>Jour 1 — Fondamentaux Claude &amp; API</h3>
+        <p>Premiers pas avec l'API Anthropic : authentification, modèles disponibles (Claude Opus, Sonnet, Haiku), paramétrage des appels. Prompt engineering avancé : comment structurer un prompt professionnel, utiliser le format XML pour les instructions complexes, gérer les system prompts. Gestion des tokens, coûts et optimisation. Exercices pratiques sur des cas réels : analyse de documents, génération de rapports, extraction d'informations structurées.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>Jour 2 — Intégration, Agentforce &amp; Déploiement souverain</h3>
+        <p>Connecter vos agents Salesforce aux capacités de Claude via l'API. Architecture RAG (Retrieval-Augmented Generation) : comment donner accès à vos documents internes à un LLM. Déploiement souverain avec Mistral AI : installation sur cloud français SecNumCloud, fine-tuning sur données propriétaires, conformité RGPD et AI Act. Atelier pratique : chaque participant repart avec un agent fonctionnel qu'il a lui-même configuré.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Public cible -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">À qui s'adresse cette formation ?</h2>
+      <ul>
+        <li><strong>Développeurs</strong> qui veulent intégrer l'IA générative dans leurs applications</li>
+        <li><strong>Chefs de projet</strong> qui doivent piloter des déploiements IA en entreprise</li>
+        <li><strong>CTO / DSI</strong> de PME qui évaluent les solutions IA pour leur organisation</li>
+        <li><strong>Consultants</strong> qui conseillent leurs clients sur la transformation IA</li>
+        <li><strong>Administrateurs Salesforce</strong> qui veulent maîtriser Agentforce + Claude</li>
+      </ul>
+      <p><strong>Prérequis :</strong> connaissances de base en programmation (Python ou JavaScript). Pas d'expérience préalable en IA requise.</p>
+    </div>
+  </section>
+
+  <!-- Vidéo -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Aperçu vidéo de la formation</h2>
+      <p class="section-subtitle">Voici la playlist "Code with Claude 2026 | London 2026" qui donne un aperçu du contenu et de l'approche pédagogique.</p>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
         <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                 src="https://www.youtube.com/embed/videoseries?list=PLmWCw1CzcFilPJdvw6scjHjbBripZWFps"
                 title="YouTube playlist Code with Claude 2026"
@@ -54,13 +105,49 @@
         </iframe>
       </div>
     </div>
+  </section>
 
-    <div style="margin-top: 3rem; text-align: center;">
-      <a href="contact.html" class="btn">Je veux former mon équipe →</a>
+  <!-- Logistique -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Logistique &amp; inscription.</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h4>Durée</h4>
+          <p>2 jours (14 heures)</p>
+          <p>9h00 – 17h30 chaque jour</p>
+        </div>
+        <div class="pricing-card">
+          <h4>Format</h4>
+          <p>Présentiel (Paris) ou distanciel</p>
+          <p>Groupes de 6 à 12 personnes maximum pour garantir la qualité</p>
+        </div>
+        <div class="pricing-card">
+          <h4>Tarif</h4>
+          <p><strong>2 160 €</strong> par personne</p>
+          <p>100% éligible CPF. Financement possible via OPCO ou plan de développement des compétences entreprise.</p>
+        </div>
+      </div>
+      <p>Prochaines sessions : nous programmons des sessions chaque mois. <a href="contact.html">Contactez-nous</a> pour connaître les prochaines dates disponibles et réserver votre place.</p>
     </div>
-  </main>
+  </section>
 
-  <footer class="main-footer"><div class="container">© 2026 Seven Yes</div></footer>
-  <script src="script.js"></script>
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Prêt à former vos équipes ?</h2>
+      <p>Un échange de 15 minutes pour valider votre éligibilité CPF et réserver votre session.</p>
+      <p><a href="contact.html" class="btn">Je veux former mon équipe →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Seven‑YES — <a href="contact.html">contact@seven-yes.com</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
