@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – Seven Yes</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactez Seven‑YES | Agence IA | Audit gratuit 30 minutes</title>
+<meta name="description" content="Contactez Seven‑YES pour un audit IA gratuit de 30 minutes. Démo Agentforce, demande de formation, ou simple question. Nous répondons sous 24h.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container navbar">
-      <a href="index.html" class="logo">Seven Yes</a>
-      <button class="menu-toggle" aria-label="Menu">☰</button>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Seven<span>-YES</span></a>
+      <button class="menu-toggle" aria-label="Menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;display:none;">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="ia-souveraine.html">IA Souveraine</a></li>
@@ -21,33 +24,117 @@
         <li><a href="formation.html">Formation</a></li>
         <li><a href="contact.html" class="btn-contact">Contact</a></li>
       </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Accueil</a> › Contact</p>
+      <h1>Parlons de votre projet IA. 30 minutes, gratuit, sans engagement.</h1>
+      <p>Un échange d'experts, pas une présentation commerciale. Nous analysons votre besoin et vous proposons une solution concrète, chiffrée, avec un calendrier.</p>
     </div>
-  </header>
+  </section>
 
-  <main class="section container" style="max-width: 700px;">
-    <h1 class="hero-title" style="font-size:2.5rem;">Parlons de votre projet</h1>
-    <p style="color: var(--gray-600); margin-bottom: 2rem;">
-      Audit gratuit de votre infrastructure IA, démo Agentforce, ou demande de formation. Remplissez le formulaire et nous revenons vers vous sous 24h.
-    </p>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Ce que vous obtiendrez lors de cet échange.</h2>
+      <ul>
+        <li>Une analyse de votre besoin spécifique par un ingénieur IA (pas un commercial)</li>
+        <li>Une recommandation de solution adaptée à votre infrastructure et votre budget</li>
+        <li>Un chiffrage complet : coût de déploiement, coût mensuel, ROI estimé, délai de retour</li>
+        <li>Un calendrier de mise en œuvre réaliste</li>
+        <li>Si pertinent : une évaluation de votre éligibilité aux subventions (Bpifrance, CPF, crédit d'impôt)</li>
+      </ul>
+    </div>
+  </section>
 
-    <form style="display:flex; flex-direction:column; gap:1.5rem;">
-      <div>
-        <label style="font-weight:500; display:block; margin-bottom:0.25rem;">Nom complet</label>
-        <input type="text" style="width:100%; padding:0.75rem; border:1px solid var(--gray-200); border-radius:8px; font-family:inherit;">
-      </div>
-      <div>
-        <label style="font-weight:500; display:block; margin-bottom:0.25rem;">Email professionnel</label>
-        <input type="email" style="width:100%; padding:0.75rem; border:1px solid var(--gray-200); border-radius:8px; font-family:inherit;">
-      </div>
-      <div>
-        <label style="font-weight:500; display:block; margin-bottom:0.25rem;">Message</label>
-        <textarea rows="5" style="width:100%; padding:0.75rem; border:1px solid var(--gray-200); border-radius:8px; font-family:inherit;"></textarea>
-      </div>
-      <button type="submit" class="btn">Envoyer</button>
-    </form>
-  </main>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Formulaire de contact.</h2>
+      <p class="section-subtitle">Remplissez ce formulaire et nous revenons vers vous sous 24h. Audit gratuit de votre infrastructure IA, démo Agentforce, ou demande de formation.</p>
 
-  <footer class="main-footer"><div class="container">© 2026 Seven Yes</div></footer>
-  <script src="script.js"></script>
+      <form class="contact-form" action="#" method="post">
+        <div>
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email professionnel</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="company">Entreprise</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div>
+          <label for="subject">Sujet</label>
+          <select id="subject" name="subject" style="width:100%;padding:10px;border:1px solid var(--border);font-family:var(--font);font-size:0.95rem;">
+            <option value="">-- Choisissez un sujet --</option>
+            <option value="audit">Audit IA gratuit (30 minutes)</option>
+            <option value="agentforce">Démo Agentforce</option>
+            <option value="employe-ia">Employé IA sur mesure</option>
+            <option value="ia-souveraine">IA Souveraine & On-Premise</option>
+            <option value="conformite">Mise en conformité RGPD / AI Act</option>
+            <option value="formation">Formation Code with Claude (CPF)</option>
+            <option value="marque-blanche">Logiciel en marque blanche</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre besoin, votre contexte, vos contraintes..."></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn">Envoyer →</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact direct -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Contact direct.</h2>
+      <div class="highlight-box">
+        <p><strong>Email :</strong> <a href="mailto:contact@seven-yes.com">contact@seven-yes.com</a></p>
+        <p><strong>Délai de réponse :</strong> sous 24 heures ouvrées</p>
+        <p><strong>Siège :</strong> Paris, France</p>
+        <p>Nous intervenons partout en France métropolitaine et pouvons travailler en distanciel pour les projets ne nécessitant pas d'installation sur site.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ rapide -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Questions fréquentes avant de nous contacter.</h2>
+
+      <div class="faq-item">
+        <h4>L'audit de 30 minutes est-il vraiment gratuit ?</h4>
+        <p>Oui. C'est un échange technique avec un ingénieur IA, pas un appel commercial. Vous repartez avec une analyse concrète, que vous décidiez ou non de travailler avec nous.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Quels sont vos délais typiques ?</h4>
+        <p>Déploiement cloud : 1 à 2 semaines. On-premise : 3 à 6 semaines. Agent en mode SaaS : 48h. Chaque projet fait l'objet d'un calendrier précis après l'audit.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Travaillez-vous avec des TPE ?</h4>
+        <p>Oui. Nous avons des offres adaptées aux TPE à partir de 300€/mois pour un agent IA en mode SaaS. Le ROI est généralement atteint en moins de 3 mois.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Seven‑YES — <a href="mailto:contact@seven-yes.com">contact@seven-yes.com</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
