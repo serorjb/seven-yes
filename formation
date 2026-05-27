@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation IA – CPF éligible – Seven Yes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">Seven Yes</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="ia-souveraine.html">IA Souveraine</a></li>
+        <li><a href="agentforce.html">Agentforce</a></li>
+        <li><a href="employes-ia.html">Employés IA</a></li>
+        <li><a href="conformite.html">Conformité</a></li>
+        <li><a href="cas-clients.html">Cas clients</a></li>
+        <li><a href="formation.html">Formation</a></li>
+        <li><a href="contact.html" class="btn-contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1 class="hero-title" style="font-size:2.8rem;">Formation “Code with Claude” – Boostez vos équipes</h1>
+    <p class="hero-subtitle">
+      Un programme pratique pour maîtriser le développement avec les modèles Claude et Mistral. <strong>Éligible au CPF</strong>, cette formation peut être financée par votre compte personnel de formation.
+    </p>
+
+    <div style="background: var(--gray-50); border-radius: var(--radius); padding: 2rem; margin: 2rem 0;">
+      <h2 style="font-weight:700; margin-bottom:0.5rem;">💰 Financement CPF</h2>
+      <p>Depuis 2026, chaque salarié dispose d’un crédit annuel de 500 € (plafond 5 000 €). Le coût de cette formation intensive (2 jours) est de <strong>2 160 €</strong>, intégralement pris en charge par le CPF dans la plupart des cas. Nous vous accompagnons dans la demande de prise en charge.</p>
+    </div>
+
+    <h2 style="font-size:2rem; margin-top:3rem;">Au programme</h2>
+    <div class="cards-grid">
+      <div class="card"><h3>Fondamentaux Claude & API</h3><p>Premiers pas avec l’API Anthropic, prompt engineering avancé, gestion des tokens.</p></div>
+      <div class="card"><h3>Intégration Agentforce</h3><p>Connecter vos agents Salesforce aux capacités de Claude.</p></div>
+      <div class="card"><h3>Déploiement souverain</h3><p>Hébergement sur cloud français, conformité RGPD/AI Act.</p></div>
+    </div>
+
+    <div style="margin-top: 3rem;">
+      <h2 style="font-size:2rem; margin-bottom:1rem;">Aperçu vidéo de la formation</h2>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: var(--radius);">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                src="https://www.youtube.com/embed/videoseries?list=PLmWCw1CzcFilPJdvw6scjHjbBripZWFps"
+                title="YouTube playlist Code with Claude 2026"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="contact.html" class="btn">Je veux former mon équipe →</a>
+    </div>
+  </main>
+
+  <footer class="main-footer"><div class="container">© 2026 Seven Yes</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
