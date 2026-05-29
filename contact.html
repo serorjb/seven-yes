@@ -60,52 +60,14 @@
 
   <section class="section--alt">
     <div class="container">
-      <p class="section-kicker">Formulaire</p>
-      <h2 class="section-title">Décrivez votre contexte.</h2>
-      <p class="section-subtitle">Le formulaire est prêt pour Formspree. Remplacez simplement l'ID placeholder dans l'attribut action lorsque votre endpoint est créé.</p>
-      <form class="contact-form" action="https://formspree.io/f/FORM_ID_PLACEHOLDER" method="post" novalidate>
-        <div class="form-grid">
-          <div>
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" autocomplete="name" required>
-            <div class="error-message" data-error-for="name" aria-live="polite"></div>
-          </div>
-          <div>
-            <label for="email">Email professionnel</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-            <div class="error-message" data-error-for="email" aria-live="polite"></div>
-          </div>
-        </div>
-        <div class="form-grid">
-          <div>
-            <label for="company">Entreprise</label>
-            <input type="text" id="company" name="company" autocomplete="organization">
-          </div>
-          <div>
-            <label for="subject">Sujet</label>
-            <select id="subject" name="subject" required>
-              <option value="">Choisissez un sujet</option>
-              <option value="audit">Audit IA gratuit</option>
-              <option value="agentforce">Démo Agentforce</option>
-              <option value="employe-ia">Employé IA sur mesure</option>
-              <option value="ia-souveraine">IA souveraine / on-premise</option>
-              <option value="conformite">Conformité RGPD / AI Act</option>
-              <option value="formation">Formation IA / CPF</option>
-              <option value="marque-blanche">Logiciel marque blanche</option>
-              <option value="autre">Autre</option>
-            </select>
-            <div class="error-message" data-error-for="subject" aria-live="polite"></div>
-          </div>
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre besoin, vos outils, vos données sensibles, vos délais ou vos contraintes."></textarea>
-          <div class="error-message" data-error-for="message" aria-live="polite"></div>
-        </div>
-        <input type="hidden" name="_subject" value="Nouvelle demande Seven-YES">
-        <div class="form-status" aria-live="polite"></div>
-        <button type="submit" class="btn">Envoyer la demande</button>
-      </form>
+      <p class="section-kicker">Google Forms</p>
+      <h2 class="section-title">Décrivez votre contexte dans le formulaire d'audit.</h2>
+      <p class="section-subtitle">Le site redirige maintenant vers Google Forms. Remplacez le lien placeholder ci-dessous par votre URL publique Google Forms dès qu'elle est prête.</p>
+      <div class="google-form-card">
+        <h3>Formulaire d'audit IA Seven-YES</h3>
+        <p>Questions recommandées : nom, email professionnel, entreprise, sujet principal, outils existants, données sensibles, délais, budget indicatif et objectif business.</p>
+        <a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener">Ouvrir le Google Form</a>
+      </div>
     </div>
   </section>
 
