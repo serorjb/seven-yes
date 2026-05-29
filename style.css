@@ -11,9 +11,9 @@
   --text-soft: #2c2f2b;
   --border: rgba(17, 17, 17, 0.12);
   --border-strong: rgba(17, 17, 17, 0.22);
-  --accent: #235b4e;
-  --accent-2: #8a6a28;
-  --accent-3: #235b4e;
+  --accent: #244f7a;
+  --accent-2: #5f7388;
+  --accent-3: #244f7a;
   --danger: #ff6b6b;
   --shadow: 0 18px 50px rgba(20, 24, 20, 0.12);
   --shadow-soft: 0 10px 28px rgba(20, 24, 20, 0.08);
@@ -38,7 +38,7 @@ body {
   font-family: var(--font);
   color: var(--text);
   background:
-    radial-gradient(circle at 78% 0%, rgba(35, 91, 78, 0.08), transparent 28rem),
+    radial-gradient(circle at 78% 0%, rgba(36, 79, 122, 0.075), transparent 28rem),
     linear-gradient(180deg, #fbfbf8 0%, #f7f7f4 52%, #ffffff 100%);
   line-height: 1.7;
   font-size: 16px;
@@ -170,7 +170,7 @@ nav,
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--text);
-  background: rgba(35, 91, 78, 0.08);
+  background: rgba(36, 79, 122, 0.08);
   transform: translateY(-1px);
 }
 
@@ -185,7 +185,7 @@ nav,
 .nav-links a.btn-contact:hover,
 .nav-cta:hover {
   color: #ffffff;
-  background: #1b493f;
+  background: #1d4268;
 }
 
 .menu-toggle {
@@ -311,14 +311,14 @@ body.nav-open .menu-toggle::after {
 
 .hero h1 {
   max-width: 980px;
-  font-size: clamp(2.15rem, 5vw, 4.35rem);
+  font-size: clamp(1.95rem, 4.2vw, 3.55rem);
 }
 
 .hero p,
 .lead {
   max-width: 780px;
   color: var(--text-soft);
-  font-size: 1.02rem;
+  font-size: 0.98rem;
 }
 
 .hero-actions,
@@ -365,7 +365,7 @@ body.nav-open .menu-toggle::after {
 
 .btn-outline:hover,
 .btn-outline-white:hover {
-  background: rgba(35, 91, 78, 0.08);
+  background: rgba(36, 79, 122, 0.08);
   color: var(--text);
   box-shadow: none;
 }
@@ -381,21 +381,21 @@ section,
 }
 
 .section--alt {
-  background: rgba(35, 91, 78, 0.035);
+  background: rgba(36, 79, 122, 0.035);
   border-block: 1px solid var(--border);
 }
 
 .section-title {
   max-width: 900px;
   margin-bottom: 18px;
-  font-size: clamp(1.65rem, 3vw, 2.65rem);
+  font-size: clamp(1.45rem, 2.45vw, 2.15rem);
 }
 
 .section-subtitle {
   max-width: 760px;
   margin: 0 0 34px;
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
 }
 
 .grid,
@@ -487,7 +487,7 @@ section,
   height: 42px;
   margin-bottom: 16px;
   border-radius: var(--radius-sm);
-  background: rgba(35, 91, 78, 0.08);
+  background: rgba(36, 79, 122, 0.08);
   color: var(--accent);
 }
 
@@ -518,7 +518,7 @@ section,
 .stat-card .num,
 .pull-stat .num {
   color: var(--text);
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.65rem, 3.2vw, 2.55rem);
   line-height: 1;
   font-weight: 800;
   letter-spacing: 0;
@@ -590,8 +590,8 @@ section,
 .case-card:hover,
 .module-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(35, 91, 78, 0.26);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(35, 91, 78, 0.035));
+  border-color: rgba(36, 79, 122, 0.26);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(36, 79, 122, 0.035));
 }
 
 .testimonial {
@@ -718,9 +718,9 @@ tr:last-child td {
 .filter-button.active,
 .tab-button:hover,
 .filter-button:hover {
-  border-color: rgba(35, 91, 78, 0.34);
+  border-color: rgba(36, 79, 122, 0.34);
   color: var(--text);
-  background: rgba(35, 91, 78, 0.08);
+  background: rgba(36, 79, 122, 0.08);
 }
 
 .agent-panel,
@@ -800,7 +800,7 @@ tr:last-child td {
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-  outline: 2px solid rgba(35, 91, 78, 0.22);
+  outline: 2px solid rgba(36, 79, 122, 0.22);
   border-color: var(--accent);
 }
 
@@ -821,13 +821,13 @@ tr:last-child td {
   padding: 76px 0;
   border-block: 1px solid var(--border);
   background:
-    linear-gradient(135deg, rgba(35, 91, 78, 0.06), rgba(138, 106, 40, 0.04)),
+    linear-gradient(135deg, rgba(36, 79, 122, 0.055), rgba(95, 115, 136, 0.035)),
     rgba(255, 255, 255, 0.72);
   text-align: center;
 }
 
 .cta-band h2 {
-  font-size: clamp(1.8rem, 3.4vw, 3rem);
+  font-size: clamp(1.55rem, 2.6vw, 2.35rem);
 }
 
 footer {
@@ -1042,7 +1042,7 @@ footer h5 {
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 11vw, 3.3rem);
+    font-size: clamp(1.85rem, 9vw, 2.8rem);
   }
 
   .cards-grid,
